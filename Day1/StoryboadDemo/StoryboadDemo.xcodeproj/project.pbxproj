@@ -63,8 +63,8 @@
 				D811D8AE1F3EC4050084F04D /* AppDelegate.swift */,
 				D811D8B01F3EC4050084F04D /* ViewController.swift */,
 				D811D8B21F3EC4050084F04D /* Assets.xcassets */,
-				D811D8B41F3EC4050084F04D /* Main.storyboard */,
 				D811D8C21F3EC93A0084F04D /* Third.storyboard */,
+				D811D8B41F3EC4050084F04D /* Main.storyboard */,
 				D811D8C01F3EC92A0084F04D /* Two.storyboard */,
 				D811D8C51F3ECA840084F04D /* NewStoryboard.storyboard */,
 				D811D8BD1F3EC9100084F04D /* One.storyboard */,
@@ -320,6 +320,7 @@
 				D811D8BC1F3EC4050084F04D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

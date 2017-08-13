@@ -33,6 +33,7 @@ class ViewController: NSViewController {
         // 所以,设置backgroundColor的才会生效
         
         
+        setupBackgroundColor()
         
         // Do any additional setup after loading the view.
     }
@@ -60,4 +61,32 @@ class ViewController: NSViewController {
      */
 
 }
+
+
+extension ViewController{
+    fileprivate func setupBackgroundColor(){
+        
+        // 1 方式: 创建layer图层
+        let blueView = NSView(frame: NSMakeRect(100, 100, 30, 30))
+        
+        let layer = CALayer()
+        layer.backgroundColor = NSColor.blue.cgColor
+        
+        layer.frame = blueView.bounds
+        
+        //
+        blueView.layer = layer
+        
+        
+        view.addSubview(blueView)
+        
+        // 方式2 : 自定义view
+        
+        let  colorVeiw = ColorView(frame: NSMakeRect(150, 50, 59, 59))
+        view.addSubview(colorVeiw)
+        
+    }
+}
+
+
 

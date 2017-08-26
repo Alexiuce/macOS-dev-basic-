@@ -45,6 +45,11 @@ class ViewController: NSViewController {
         // 显示openpanel
         openpanel.beginSheetModal(for: view.window!) { (result) in
             print("\(result)")
+            if result == NSModalResponseOK {
+                for u in openpanel.urls {
+                    print(u.absoluteString)
+                }
+            }
         }
     }
 

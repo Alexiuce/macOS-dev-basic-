@@ -1,0 +1,14 @@
+# Uncomment the next line to define a global platform for your project
+platform :osx, '10.12'
+
+target 'CocoapodDemo' do
+  # 入股使用Objective-C环境,要注释掉下面的语句
+  use_frameworks!
+
+  # Pods for CocoapodDemo
+
+   # 这里添加第三方库
+
+   pod 'SnapKit', '~> 3.2.0'
+
+end

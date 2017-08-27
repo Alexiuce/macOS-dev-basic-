@@ -24,4 +24,10 @@ Mac  osx 开发基础视频项目工程
 14. NSPopover 基本应用
 15. NSMenu 基本应用
 16. NSContainerView 基本应用
+17. NSSlider 使用
+18. NSOpenPanel 常用方法
+19. 在OSX项目中使用cocoapod
+20. NSStatusBar 使用
+21. 自定义Custom View
+22. Cocoa Binding 简介
    

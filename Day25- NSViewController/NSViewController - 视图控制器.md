@@ -15,7 +15,9 @@
 * viewWillAppear()
 * viewDidAppear()
      * updateViewConstraints()
+
      * viewWillLayout()
+
      * viewDidLayout()
 * viewWillDisappear()
 * viewDidDisappear() 
@@ -27,10 +29,10 @@
 
 **PresentControler的四种方式**
 
-    modal
-    sheet
-    popover
-    custom 
+    modal : 以独立窗口的形式显示新的控制器界面
+    sheet  : 内嵌在当前window中的形式显示新的控制器界面
+    popover : 已popover形式显示
+    custom   : 自定义显示方式
     
  
 

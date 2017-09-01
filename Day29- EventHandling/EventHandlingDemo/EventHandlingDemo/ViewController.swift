@@ -48,7 +48,7 @@ class ViewController: NSViewController {
  
    App 将事件进行封装 --> 转为NSEvent对象 --> 调用发送事件方法(sendEvent:),进行事件的分发(通常发送给当前的活动window)  --> window获得事件(NSEvent)后,会继续分发(sendEvent:)到对应View ---> NSView获得事件(NSEvent)后,进行事件(NSEvent)处理
  
-   一个NSView是否能响应事件,是根据hitTest:方法的返回值来确认的 : 如果返回false ,则说明这个NSView不会响应该事件的处理,反之,则表示可以处理事件.
+   一个NSView是否能响应事件,是根据hitTest:方法的返回值来确认的 : 这个方法的返回对象就是表示可以响应该事件，如果返回nil ,则说明这个NSView不会响应该事件的处理
    如果NSEvent是一个键盘的事件,那么能响应的window,需要是一个keyWindow ,也就是说,如果一个windows不是keyWindow,那么这个window不会响应键盘相关的事件.
  
  

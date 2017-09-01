@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  EventHandlingDemo
+//  NSEventHandlingDemo
 //
-//  Created by Alexcai on 2017/8/31.
+//  Created by Alexcai on 2017/9/1.
 //  Copyright © 2017年 Alexcai. All rights reserved.
 //
 

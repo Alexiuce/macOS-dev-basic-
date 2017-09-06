@@ -3,6 +3,8 @@
 
 Mac  osx 开发基础视频项目工程
 
+>   [课程视频](http://study.163.com/course/introduction/1004170018.htm)
+
 1. storyboard 简介
    
 2. autolayout 基本使用

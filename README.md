@@ -3,7 +3,7 @@
 
 Mac  osx 开发基础视频项目工程
 
->   [课程视频](http://study.163.com/course/introduction/1004170018.htm)
+>   观看基础视频链接：[课程视频](http://study.163.com/course/introduction/1004170018.htm)
 
 1. storyboard 简介
    

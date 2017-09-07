@@ -2,7 +2,7 @@
 
 ### Mac  osx 开发基础视频项目工程
 
-![Mac osx 开发视频 ](https://ws3.sinaimg.cn/large/006tNc79gy1fjb0bxrg6nj30ug0gm7cy.jpg)
+![Mac osx 开发视频 ](https://ws3.sinaimg.cn/large/006tNc79gy1fjb0li8lkvj30v20hkn5x.jpg)
 
 >   观看基础视频链接：[课程视频](http://study.163.com/course/introduction/1004170018.htm)
 

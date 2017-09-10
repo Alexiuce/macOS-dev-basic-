@@ -1,5 +1,6 @@
 # macOS-dev-basic-
-![](https://img.shields.io/badge/platform-MacOSX-red.svg)
+![](https://img.shields.io/badge/platform-Mac OSX-red.svg)
+![](https://img.shields.io/badge/Language-swift4.0-orange.svg)
 
 
 ![](https://ws3.sinaimg.cn/large/006tNc79gy1fjb0li8lkvj30v20hkn5x.jpg)

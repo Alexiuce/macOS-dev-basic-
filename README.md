@@ -1,5 +1,5 @@
 # macOS-dev-basic-
-![](https://img.shields.io/badge/platform-Mac OSX-red.svg)
+![](https://img.shields.io/badge/platform-MacOSX-red.svg)
 ![](https://img.shields.io/badge/Language-swift4.0-orange.svg)
 
 

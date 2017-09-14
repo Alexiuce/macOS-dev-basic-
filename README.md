@@ -15,6 +15,7 @@
 
 3. NSView 基础
   * 坐标系与frame
+  * 简书课外更新补充：[理解bounds本质](http://www.jianshu.com/p/889ef9bb8b2e)
   * 设置backgroundColor
   * backed-layer view / hosting-layer view
 4. NSButton 使用

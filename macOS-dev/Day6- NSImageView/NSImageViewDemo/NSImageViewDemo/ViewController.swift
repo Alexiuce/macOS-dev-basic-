@@ -16,14 +16,20 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+//        imgView.imageScaling = .scaleNone;
+        
+        
         // 1. 创建NSImageView
-//        let imgRect = NSMakeRect(100, 50, 200, 200)
-//        let imgView = NSImageView(frame: imgRect)
-//        // 2. 添加到父视图中
-//        view.addSubview(imgView)
-//        
-//        // 3. 设置常用属性
-//        imgView.image = NSImage(named: "timg")   // 设置显示图片
+        let imgRect = NSMakeRect(100, 50, 200, 200)
+        let imageView = NSImageView(frame: imgRect)
+        // 2. 添加到父视图中
+        view.addSubview(imageView)
+        
+        // 3. 设置常用属性
+        imageView.image = NSImage(named: "apple")   // 设置显示图片
+        imageView.imageScaling = .scaleNone
+        imageView.imageAlignment = .alignCenter
 //        imgView.isEditable = true    // 设置是支持编辑功能
         
         
@@ -35,9 +41,9 @@ class ViewController: NSViewController {
         
         
         // 6. 仅当图片可编辑时,用户拖拽图片到NSImageView上时,才会执行响应
-        imgView.target = self
+        imageView.target = self
         
-        imgView.action = #selector(clickedImageView)
+        imageView.action = #selector(clickedImageView)
         
         
         

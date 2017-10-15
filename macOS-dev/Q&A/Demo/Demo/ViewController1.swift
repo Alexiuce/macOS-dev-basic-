@@ -24,6 +24,7 @@ class ViewController1: NSViewController {
 //        sunYang.append(SunYang(matchS: "里约奥运会400米自由泳", recordS: "3分41秒68"))
         // Do view setup here.
         
+        
         // 监听通知
         NotificationCenter.default.addObserver(self, selector: #selector(handleNotification(_:)), name: Notification.Name("AddNewScore"), object: nil)
         

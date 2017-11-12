@@ -11,7 +11,7 @@
 
 #### 一个事件(Event)是怎样开始传递到应用(Cocoa Application)的?
   *我们这里说的事件,是指用户通过连接到macOS系统中的鼠标,键盘或者触控板,手写笔等硬件设备的具体操作(比如按下鼠标的按键).*
-  
+  ![Apple event ](https://ws4.sinaimg.cn/large/006tKfTcly1flfe5jo843j30ks0nkwhl.jpg)
   我们以最常用的`鼠标`或`键盘`操作来说明`事件传递`到应用的过程.当用户按下鼠标或者键盘时:  
   
 * 1.硬件设备首先检测到用户的这个操作,然后通过`驱动程序`将这个`操作动作`转换为`操作数据`.
@@ -21,4 +21,4 @@
 * 5.macOS的`窗口服务`收到`驱动程序`的消息后,会寻找对应的进程(也就是应用程序).
 * 6.当`窗口服务`找到App 进程后,会将`事件`派发到这个应用进程的`runloop`
 * 7.当应用进程的`runloop`接收到`事件`后,就开始了`事件`响应机制,从此刻后,将`事件`将遵循`NSResponder`类的处理.
-![Apple event ](https://ws4.sinaimg.cn/large/006tKfTcly1flfe5jo843j30ks0nkwhl.jpg)
+

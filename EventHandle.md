@@ -21,4 +21,4 @@
 * 5.macOS的`窗口服务`收到`驱动程序`的消息后,会寻找对应的进程(也就是应用程序).
 * 6.当`窗口服务`找到App 进程后,会将`事件`派发到这个应用进程的`runloop`
 * 7.当应用进程的`runloop`接收到`事件`后,就开始了`事件`响应机制,从此刻后,将`事件`将遵循`NSResponder`类的处理.
-
+![Apple event ](https://ws4.sinaimg.cn/large/006tKfTcly1flfe5jo843j30ks0nkwhl.jpg)

@@ -23,6 +23,8 @@
 * NSApplication 会将接收到的Event 转换为NSEvent 对象.
 * 所有的鼠标和键盘事件都会被NSApplication 派发到与之关联的某个具体的NSWindow 对象中,但有一种情况例外:**如果按下的是Command(⌘)键,那么所有的NSWindow对象都有机会响应这个事件.**
 * NSApplication同时会响应(或派发)接收到的Apple Event(**这个比较重要**),比如应用启动或者被再次打开(reopened),这个最常用的一个使用场景是通过URL打开我们的App(**处理方式与iOS不同哦,需要特别注意呀**),前提是需要使用NSAppleEventManager类对事件进行注册!!,通常都是写在applicationWillFinishedLaunching(_:)这个方法中.
+* NSApplication同时负责与macOS的系统服务交互(**需要制作系统偏好设置的同学可要注意这里哦**),这样可以使你通过服务菜单提供一些系统设置.
+* NSAPPlication可以设置Delegate(这个就不细说了,基本与iOS相似)来响应一些具体消息.
 
 一个窗口对象(NSWindow)处理窗口级别的事件(window-level events)以及将其他事件传递给窗口中的视图对象,同时一个NSWindow还允许通过它的delegate实现自定义窗口的行为方式.
 
@@ -40,3 +42,21 @@
 * 6.当`窗口服务`找到App 进程后,会将`事件`派发到这个应用进程的`runloop`
 * 7.当应用进程的`runloop`接收到`事件`后,就开始了`事件`响应机制,从此刻后,将`事件`将遵循`NSResponder`类的处理.
 
+> *通常情况下,应用程序只有在前台运行的时候才会接收鼠标和键盘的事件;当应用处于后台时,即便是在运行中,一般也不会响应鼠标和键盘的事件,除非是要将这个应用唤醒到前台的事件才会得到响应*
+
+#### 事件循环runloop
+每个应用都有一种明确的机制用来确保从操作系统的`窗口服务`中获取事件(Event).在Cocoa Application中,这种机制叫做runloop(一个NSRunLoop对象,它允许进程接收`窗口服务`的各种来源).默认情况下,OSX中每个线程都有自己的runloop.NSAPplication 主线程的runloop称为main runloop,主事件循环的一个显著特点是它由NSApplication对象创建的事件输入源(也就是其他对象,通常是操作系统的`窗口服务`,可以向它添加事件源).
+为了能从`窗口服务`接收事件和对接收到的事件进行处理,runloop通常包含这两个部分:端口(Mach port)和事件队列(queue)
+![](https://ws3.sinaimg.cn/large/006tNc79gy1flggycyukvj30oy0d8406.jpg)
+
+* 端口(Mach port):用来从操作系统的`窗口服务`中获取事件(Event)
+* 队列(Event queue):保存这些事件,直到它们被响应处理.
+
+
+从另一种意义上讲,应用程序是被事件(event)驱动的:
+
+* 它从runloop的事件队列中获取一个事件(NSEvent)
+* 派发事件(NSEvent)到合适的对象(Object)
+* 事件被处理完成后,再取下一个事件(NSEvent),直到应用退出.
+
+#### 事件分发(Event Dispatch)

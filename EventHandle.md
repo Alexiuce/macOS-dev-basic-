@@ -60,3 +60,19 @@
 * 事件被处理完成后,再取下一个事件(NSEvent),直到应用退出.
 
 #### 事件分发(Event Dispatch)
+在主事件循环中(`main event runloop`),应用程序对象(NSApp)会不断的从事件队列中(event queue)获取最前面的事件,然后将它转换为NSEvent 对象后,派发到最终目标.
+
+* `NSApp`是通过`nextEventMatchingMask:untilDate:inMode:dequeue:`这个方法从事件队列中获取到事件,当事件队列为空的时候(也就是队列中无事件),这个方法会阻塞,直到有新的事件到来才会继续.
+* `NSApp`将事件转换为NSEvent后,第一件事就是调用sendEvent:方法进行派发.
+* 大部分的情况下,`NSApp`都会将事件派发给用户操作的那个窗口(NSWindow),这是通过调用窗口(NSWindow)的sendEvent:方法完成的.
+* `NSWindow`窗口对象将事件以`NSResponder Message`消息的形式(比如`mouseDown:`或者`keyDown:`)派发到与用户操作关联的`NSView`对象.
+* `NSWindow`派发事件时会根据事件类型略有不同:对于鼠标和触控板事件,`NSWindow`对象会将事件派发到用户鼠标点击的NSView.对于键盘(`keyboard`)事件,`NSWindow`通常会将事件派发给`key Window`的`第一响应者`
+
+由此可见,在事件派发的过程中,会根据事件种类(AppKit中定义的`NSAppKitDefined`类型)的不同而进行不同的派发选择.有些事件只能由NSWindow或者NSApplication自身来处理,比如应用的隐藏/显示/激活状态/失去激活状态等.
+
+##### 鼠标(或触控板)事件派发路径
+前面已经提到过,一个`NSWindow`对象使用sendEvent:方法将鼠标事件派发给用户操作的视图(NSView)对象.那么`NSWindow`是怎样识别是哪个NSView在被用户操作呢?是通过调用`NSView`的`hitTest:`方法,根据这个方法的返回值(通常是显示在最顶层的View)来确定.
+
+
+##### 键盘事件派发路径
+##### 其他事件派发

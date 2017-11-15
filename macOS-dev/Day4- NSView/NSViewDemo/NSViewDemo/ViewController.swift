@@ -8,11 +8,14 @@
 
 import Cocoa
 
+
+
 class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // 设置视图的背景颜色
         
         // 1. 创建视图

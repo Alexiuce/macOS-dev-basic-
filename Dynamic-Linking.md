@@ -6,3 +6,9 @@
 
 那么静态链接(static linking)对与动态链接(dynamic linking)有怎样的意义呢?
 
+#### 准备工具:
+
+* clang
+* xcrun
+* xctest
+* otool

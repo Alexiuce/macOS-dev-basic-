@@ -98,4 +98,12 @@
 
 关于控制键的更详细内容,有兴趣的同学可以通过这个链接[Handling Key Events](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/EventOverview/HandlingKeyEvents/HandlingKeyEvents.html#//apple_ref/doc/uid/10000060i-CH7-SW9)查看苹果官方的文档
 
+
+4. `Keyboard action`(命令键):这种事件通常是指预先将种操作通过`按键绑定机制`[Text System Defaults and Key Bindings](Text System Defaults and Key Bindings)绑定到某个具体的物理按键上,当这个按钮被按下时,执行特定的方法,比如 `pageDown:`, `moveToBeginningOfLine:` 和`capitalizeWord:`. NSWindow通常会将命令键的event发送到窗口内的第一响应者对象.
+5. 如果是文本字符事件,那么会将按键字符插入到文本中.  
+
+在`应用程序`处理键盘事件时,如果这个事件不是`快捷键(Key equivalents)`或者`控制键Keyboard interface control`,那么`应用程序`会将事件通过`sendEvent:`方法发送给`kew window`,然后窗口(key window)对象会调用第一响应者的`keyDown:`方法,将事件传递到整个响应链条中.
+
+关于键盘事件的派发与处理细节,大家可以查看苹果官方文档[Handling Key Events](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/EventOverview/HandlingKeyEvents/HandlingKeyEvents.html#//apple_ref/doc/uid/10000060i-CH7-SW1)
+
 ##### 其他事件派发

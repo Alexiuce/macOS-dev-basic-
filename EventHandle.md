@@ -1,4 +1,5 @@
-## AppKit 的事件处理
+## macOS AppKit 的事件处理
+![](https://ws1.sinaimg.cn/large/006tKfTcgy1fll1615zqtj30ms0ome1j.jpg)
 
 > 在*AppKit*中的事件都处于一个响应的链条中,这个链条是由一个叫做`NSResponder` 的类定义的,这个响应链条其实是一个列表,它里面装满了能够响应用户事件的对象.当用户点击鼠标,或者按下键盘的某个键,或者触摸触控板,都会生成一个`Event`事件,然后在响应链条中寻找可以处理这个事件的对象对事件进行处理.
 > 一个对象如果可以处理事件,那么这个对象必须继承自`NSResponder`这个类.在AppKit中,*NSApplication*,*NSWindow*,*NSView*都继承自`NSResponder`
@@ -85,9 +86,16 @@
 
 `NSView` 通常会自动接收`鼠标点击`和`鼠标拖拽`事件,而不会主动接收`鼠标移动`事件.因为`鼠标移动`事件发生的太过频繁,**很容易阻塞事件队列**,所以默认情况下`NSView`不响应`鼠标移动`事件.如果一个NSView需要处理`鼠标移动`事件,那么需要向它的窗口对象(NSWindow)明确的声明一下,也就是调用NSWindow的 setAcceptsMouseMovedEvents:方法
 
-
-
-
-
 ##### 键盘事件派发路径
+响应键盘输入是事件派发中最复杂的部分之一.Cocoa 应用程序会遍历每一个键盘事件来确定它属于那种类型然后以及如何处理.先来看一下苹果官方给出的一个键盘事件可能的传递传递路径:
+![](https://ws3.sinaimg.cn/large/006tKfTcgy1fll1pqjm7xj30yg10qtgg.jpg)
+
+下面我们来解释一下:
+
+1. `Key equivalents`(快捷键): 通常是一个或者一组键(通常是与⌘,⌥,⌃等组合),它们被绑定到应用(`NSApplication`)的某个菜单栏条目(`menu item`)或者某个`NSObject 控件对象` ,当按下这个(或这组)键时,就相当于选中了菜单栏或者点击了控件对象.
+2. NSApplication接收到`Key equivalents`(快捷键)事件时,会先传递给`key window`的视图(NSView)体系中,通过给每个对象发送performKeyEquivalent:消息来确认是否有控件响应此事件(根据这个方法的返回值来确认:YES代表响应,NO则是不响应*默认为NO*),如果视图(NSView)体系中没有任何对象响应,那么NSApplication会将这个快捷键事件发送给menu bar(菜单栏).在Cocoa 的一些类中,比如 `NSButton`, `NSMenu`, `NSMatrix`, 和 `NSSavePanel` 都提供了默认的响应处理.
+3. `Keyboard interface control` (控制键): 键盘的控制键事件通常是用来在用户界面上控制当前焦点对象的.在key window中,NSWIndow对象负责对接收到的`Keyboard interface control`事件进行具体的解释.例如按下`Tab`键会将当前焦点从一个控件转移到下一个上面;按下`Shift-Tab`会按照反方向移动焦点;按下`Space bar`(空格)会模拟鼠标点击等等.这些交互的控件顺序你可以通过(Xcode中的)Interface Builder来构建也可以通过代码来控制(使用**NSView**的 `setNextKeyView:` 和 `nextKeyView` 方法)
+
+关于控制键的更详细内容,有兴趣的同学可以通过这个链接[Handling Key Events](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/EventOverview/HandlingKeyEvents/HandlingKeyEvents.html#//apple_ref/doc/uid/10000060i-CH7-SW9)查看苹果官方的文档
+
 ##### 其他事件派发

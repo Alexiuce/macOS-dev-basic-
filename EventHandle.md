@@ -1,4 +1,4 @@
-## macOS AppKit 的事件处理
+## macOS AppKit 的事件响应简介
 ![](https://ws1.sinaimg.cn/large/006tKfTcgy1fll1615zqtj30ms0ome1j.jpg)
 
 > 在*AppKit*中的事件都处于一个响应的链条中,这个链条是由一个叫做`NSResponder` 的类定义的,这个响应链条其实是一个列表,它里面装满了能够响应用户事件的对象.当用户点击鼠标,或者按下键盘的某个键,或者触摸触控板,都会生成一个`Event`事件,然后在响应链条中寻找可以处理这个事件的对象对事件进行处理.
@@ -107,3 +107,8 @@
 关于键盘事件的派发与处理细节,大家可以查看苹果官方文档[Handling Key Events](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/EventOverview/HandlingKeyEvents/HandlingKeyEvents.html#//apple_ref/doc/uid/10000060i-CH7-SW1)
 
 ##### 其他事件派发
+
+在应用程序中,我们可以使用`NSTrackingArea`类添加一个监控区域,这些事件`NSWindow`对象会直接派发到拥有这个区域的指定对象(通常发送 mouseEntered:和 mouseExited:消息).
+
+应用程序(NSApplication)生成的周期性事件(NSPeriodic)通常不会使用`sendEvent:`派发,它们是通过某个NSObject对象注册后(通过调用nextEventMatchingMask:untilDate:inMode:dequeue: 方法)才会得到处理.具体的详细内容,可以参考[Other Types of Events](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/EventOverview/EventObjectsTypes/EventObjectsTypes.html#//apple_ref/doc/uid/10000060i-CH4-SW6)
+

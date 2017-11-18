@@ -12,5 +12,8 @@
 
 
 * xcrun
+
 * xctest
+
 * otool
+  > 相当于Linux系统中的ldd工具,经常用来反编译工程中的依赖库信息.

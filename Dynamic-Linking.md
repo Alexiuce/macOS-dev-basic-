@@ -1,5 +1,13 @@
+![](https://ws1.sinaimg.cn/large/006tKfTcgy1flrzbqtpsuj30v60js7bl.jpg)
 ## Dynamic Linking On OSX(关于macOS的动态链接)
 ![](https://img.shields.io/badge/platform-MacOSX-red.svg)
+
+
+#### Static Libraries(静态库)
+当你链接一个静态库,这个库的内容就会在编译的时候,全部拷贝到你的应用项目中,就好像是你自己写的代码一样.
+
+#### Dynamic Libraries(动态库)
+当你链接了一个动态库,其实并没有与这个库有紧密的关联,只是链接器简单的标记了一下你所用到的这个动态库里的函数(或方法).当你的应用程序加载运行的时候,动态链接器才会装载你链接的这个库.
 
 #### Static linking (静态链接)
 静态链接就是我们平时说的链接,它发生在编译动作之后.我们的源代码经过编译器的编译后生成机器码,经过`链接`后形成一个独立的二进制文件.

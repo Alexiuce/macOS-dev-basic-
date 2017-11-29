@@ -121,7 +121,19 @@ cpu中有大量的寄存器(至少100个),幸运的是开发者(即便是使用�
    * 内平栈: 由函数内部保持栈的平衡(stdcall方式函数调用)
 
 
+#### AT&T 汇编与Intel汇编
+![](https://ws3.sinaimg.cn/large/006tKfTcgy1flyowrqsmij31kw0j64gc.jpg)
 
+* AT&T:(代表系统Mac, Linux ,Unix)  
+
+   寄存器命名以%开头  : %eax  
+   常数以$开头:  $0x10  
+   操作顺序:    movl %eax %edx       // 将 eax寄存器的值送到edx中
+    
+* Intel:(代表系统DOS,Windwos)  
+	寄存器  : eax  
+   常数以:  0x10  
+   操作顺序:    movl edx eax        // 将 eax寄存器的值送到edx中
 
 
 

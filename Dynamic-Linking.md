@@ -135,7 +135,8 @@ cpu中有大量的寄存器(至少100个),幸运的是开发者(即便是使用�
    常数以:  0x10  
    操作顺序:    movl edx eax        // 将 eax寄存器的值送到edx中
 
-
+#### AT&T 与Intel 的寻址方式
+![](https://ws2.sinaimg.cn/large/006tKfTcgy1flyp3e510uj31740a6qdb.jpg)
 
 
 

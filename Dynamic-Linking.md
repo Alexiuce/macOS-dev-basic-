@@ -111,16 +111,32 @@ cpu中有大量的寄存器(至少100个),幸运的是开发者(即便是使用�
 
 
 #### 栈
+
     栈是一种特殊的数据结构,是实现函数调用的基石.(8086 的cpu是没有存储栈底位置的寄存器)  
-    
+  
+   **函数调用栈的平衡: 要保证函数调用前与调用后,栈顶是一致的**  
    **栈空间的增长方向是向着低地址的.**
 
+   * 外平栈: 由函数外部调用者保持栈的平衡(cdecl方式函数调用)
+   * 内平栈: 由函数内部保持栈的平衡(stdcall方式函数调用)
 
 
+#### AT&T 汇编与Intel汇编
+![](https://ws3.sinaimg.cn/large/006tKfTcgy1flyowrqsmij31kw0j64gc.jpg)
 
+* AT&T:(代表系统Mac, Linux ,Unix)  
 
+   寄存器命名以%开头  : %eax  
+   常数以$开头:  $0x10  
+   操作顺序:    movl %eax %edx       // 将 eax寄存器的值送到edx中
+    
+* Intel:(代表系统DOS,Windwos)  
+	寄存器  : eax  
+   常数以:  0x10  
+   操作顺序:    movl edx eax        // 将 eax寄存器的值送到edx中
 
-
+#### AT&T 与Intel 的寻址方式
+![](https://ws2.sinaimg.cn/large/006tKfTcgy1flyp3e510uj31740a6qdb.jpg)
 
 
 

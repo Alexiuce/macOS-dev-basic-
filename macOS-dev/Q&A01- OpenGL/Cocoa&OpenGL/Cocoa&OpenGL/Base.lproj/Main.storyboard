@@ -715,40 +715,26 @@
                                     <constraint firstAttribute="height" constant="160" id="J9X-45-89C"/>
                                     <constraint firstAttribute="width" constant="244" id="vJc-hO-oTc"/>
                                 </constraints>
-                                <connections>
-                                    <outlet property="sliderMatrix" destination="YzL-pK-gfc" id="WzR-hj-oHS"/>
-                                </connections>
                             </openGLView>
-                            <matrix verticalHuggingPriority="750" mode="track" allowsEmptySelection="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YzL-pK-gfc">
-                                <rect key="frame" x="299" y="55" width="75" height="160"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="9v0-rs-aaP"/>
-                                    <constraint firstAttribute="height" constant="160" id="dW7-69-CSX"/>
-                                </constraints>
-                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                <size key="cellSize" width="25" height="160"/>
-                                <sliderCell key="prototype" continuous="YES" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="TNn-mx-456"/>
-                                <cells>
-                                    <column>
-                                        <sliderCell continuous="YES" alignment="left" minValue="-4" maxValue="4" doubleValue="1" tickMarkPosition="right" sliderType="linear" id="dt1-eM-aaZ"/>
-                                    </column>
-                                    <column>
-                                        <sliderCell continuous="YES" alignment="left" tag="1" minValue="-4" maxValue="4" tickMarkPosition="right" sliderType="linear" id="AFi-2k-8yu"/>
-                                    </column>
-                                    <column>
-                                        <sliderCell continuous="YES" alignment="left" tag="2" minValue="0.29999999999999999" maxValue="5" doubleValue="4" tickMarkPosition="right" sliderType="linear" id="hHh-LT-lkA"/>
-                                    </column>
-                                </cells>
-                                <connections>
-                                    <action selector="changeParameterWithSlider:" target="fF5-aj-35c" id="Zl9-fa-Rvt"/>
-                                </connections>
-                            </matrix>
+                            <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gso-X7-Olr">
+                                <rect key="frame" x="364" y="52" width="19" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" alignment="left" minValue="0.29999999999999999" maxValue="5" doubleValue="4" tickMarkPosition="right" sliderType="linear" id="b5l-kb-4fZ"/>
+                            </slider>
+                            <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5hY-WK-Hi7">
+                                <rect key="frame" x="297" y="52" width="19" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" alignment="left" minValue="-4" maxValue="4" doubleValue="1" tickMarkPosition="right" sliderType="linear" id="uWa-3s-ZjO"/>
+                            </slider>
+                            <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8aG-WR-GpD">
+                                <rect key="frame" x="331" y="52" width="19" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" alignment="left" minValue="-4" maxValue="4" doubleValue="1" tickMarkPosition="right" sliderType="linear" id="rMc-z6-cAc"/>
+                            </slider>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="YzL-pK-gfc" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="ODy-1m-CG9"/>
                             <constraint firstItem="fF5-aj-35c" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="kmh-uQ-lgh"/>
                             <constraint firstItem="fF5-aj-35c" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="13" id="mfI-Rp-Tez"/>
-                            <constraint firstItem="YzL-pK-gfc" firstAttribute="leading" secondItem="fF5-aj-35c" secondAttribute="trailing" constant="42" id="qgw-rm-Eak"/>
                         </constraints>
                     </view>
                 </viewController>

@@ -24,6 +24,8 @@
 		D823CF23209E9B5300B43741 /* Cocoa_OpenGL.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cocoa_OpenGL.entitlements; sourceTree = "<group>"; };
 		D823CF29209E9C5F00B43741 /* MyGLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGLView.swift; sourceTree = "<group>"; };
 		D823CF2B209E9C9900B43741 /* OpenGLReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = OpenGLReadMe.md; sourceTree = "<group>"; };
+		D823CF2D209F079D00B43741 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		D823CF2F209F07A900B43741 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 			children = (
 				D823CF18209E9B5200B43741 /* Cocoa&OpenGL */,
 				D823CF17209E9B5200B43741 /* Products */,
+				D823CF2C209F079C00B43741 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +69,15 @@
 				D823CF23209E9B5300B43741 /* Cocoa_OpenGL.entitlements */,
 			);
 			path = "Cocoa&OpenGL";
+			sourceTree = "<group>";
+		};
+		D823CF2C209F079C00B43741 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D823CF2F209F07A900B43741 /* GLUT.framework */,
+				D823CF2D209F079D00B43741 /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -8,6 +8,7 @@
 
 import Cocoa
 
+import OpenGL
 import GLUT
 
 fileprivate let LightTag: Int = 0
@@ -26,13 +27,14 @@ class MyGLView: NSOpenGLView {
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
 
+        
         // Drawing code here.
     }
     
     
     required init?(coder decoder: NSCoder) {
         super.init(coder: decoder)
-//        prepare()
+        prepare()
     }
     
     
@@ -47,10 +49,19 @@ class MyGLView: NSOpenGLView {
 extension MyGLView{
     fileprivate func prepare(){
         openGLContext?.makeCurrentContext()
-        guard let ctx =  openGLContext?.cglContextObj else { return  }
         
+        /** 设置视图*/
+        glShadeModel(GLenum(GL_SMOOTH))
+        glEnable(GLenum(GL_LIGHTING))
+        glEnable(GLenum(GL_DEPTH_TEST))
+        
+        /** 添加光照环境 */
        
         
+        
+        /***/
+        /***/
+        /***/
         
         
         

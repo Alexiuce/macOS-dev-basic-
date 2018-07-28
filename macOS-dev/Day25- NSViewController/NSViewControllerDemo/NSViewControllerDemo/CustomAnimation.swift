@@ -48,11 +48,6 @@ extension CustomAnimation : NSViewControllerPresentationAnimator{
         }) { 
             viewController.view.removeFromSuperview()
         }
-        
-        
-        
-        
-        
     }
 
 }

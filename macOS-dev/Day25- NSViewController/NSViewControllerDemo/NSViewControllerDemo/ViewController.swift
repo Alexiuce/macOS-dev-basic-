@@ -22,8 +22,8 @@ class ViewController: NSViewController {
     // 这个方法是在view被加载到内存的时候,控制器才会调用
     override func viewDidLoad() {
         super.viewDidLoad()
-//        setupUI()
-         vc1 = MYFirstController()
+        setupUI()
+//         vc1 = MYFirstController()
         // Do any additional setup after loading the view.
     }
 
@@ -58,6 +58,7 @@ class ViewController: NSViewController {
     // 从VC2 过渡到VC1
     @IBAction func showFromV2ToV1(_ sender: Any) {
         if currentViewController != vc2 {return}
+        
         transition(from: vc2, to: vc1!, options: .slideDown, completionHandler: {
             self.currentViewController = self.vc1
         })

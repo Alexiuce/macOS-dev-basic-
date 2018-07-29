@@ -11,6 +11,7 @@ import Cocoa
 class ViewController: NSViewController {
 
     
+    @IBOutlet weak var containView: NSView!
     
     @IBOutlet var toolBar: NSToolbar!
     
@@ -121,6 +122,7 @@ extension ViewController{
         
         addChildViewController(vc1!)
         addChildViewController(vc2)
+        containView.addSubview(currentViewController.view)
         
 
     }

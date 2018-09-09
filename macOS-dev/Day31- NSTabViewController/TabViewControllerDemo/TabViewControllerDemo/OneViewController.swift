@@ -14,6 +14,7 @@ class OneViewController: NSViewController {
         super.viewDidLoad()
         // Do view setup here.
         view.layer?.backgroundColor = NSColor.orange.cgColor
+        self.preferredContentSize = view.frame.size
     }
     
 }

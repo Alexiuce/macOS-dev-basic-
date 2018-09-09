@@ -14,6 +14,7 @@ class TwoViewController: NSViewController {
         super.viewDidLoad()
         // Do view setup here.
          view.layer?.backgroundColor = NSColor.red.cgColor
+         self.preferredContentSize = view.frame.size
     }
     
 }

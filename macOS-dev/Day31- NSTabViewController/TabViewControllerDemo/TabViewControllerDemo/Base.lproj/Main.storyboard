@@ -709,7 +709,7 @@
                         <tabViewItem identifier="" id="330-at-N3U"/>
                         <tabViewItem identifier="" id="k1l-uq-mdb"/>
                     </tabViewItems>
-                    <tabView key="tabView" type="noTabsNoBorder" id="TQR-zh-hpP">
+                    <tabView key="tabView" type="noTabsBezelBorder" id="TQR-zh-hpP">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <font key="font" metaFont="message"/>
@@ -749,7 +749,7 @@
                 </viewController>
                 <customObject id="pFe-5z-7Zp" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="800" y="457"/>
+            <point key="canvasLocation" x="710" y="460"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="b81-jJ-4dz">
@@ -773,7 +773,7 @@
                 </viewController>
                 <customObject id="neI-uB-WX4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="800" y="879"/>
+            <point key="canvasLocation" x="710" y="869"/>
         </scene>
     </scenes>
 </document>

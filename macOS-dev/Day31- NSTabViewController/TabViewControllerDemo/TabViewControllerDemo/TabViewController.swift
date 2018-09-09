@@ -12,26 +12,8 @@ class TabViewController: NSTabViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    
 
-        // Do any additional setup after loading the view.
-//        NSSegmentedControl
-        
-//        let segmentControl = view.subviews.last
-//        segmentControl?.removeFromSuperview()
-        
-//        print("\(view.self)")
-//        let indexView = NSView(frame: NSMakeRect(0, 0, 100, 80))
-//        indexView.wantsLayer = true
-//        view.addSubview(indexView)
-//        indexView.layer?.backgroundColor = NSColor.blue.cgColor
     }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
-
-
 }
 

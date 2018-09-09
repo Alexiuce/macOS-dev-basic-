@@ -704,12 +704,12 @@
         <!--Tab View Controller-->
         <scene sceneID="TyM-oX-aq5">
             <objects>
-                <tabViewController id="HkI-Vd-hdF" sceneMemberID="viewController">
+                <tabViewController selectedTabViewItemIndex="0" tabStyle="bottom" id="HkI-Vd-hdF" customClass="TabViewController" customModule="TabViewControllerDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tabViewItems>
-                        <tabViewItem identifier="" id="330-at-N3U"/>
-                        <tabViewItem identifier="" id="k1l-uq-mdb"/>
+                        <tabViewItem identifier="" image="NSApplicationIcon" id="330-at-N3U"/>
+                        <tabViewItem identifier="" image="NSAdvanced" id="k1l-uq-mdb"/>
                     </tabViewItems>
-                    <tabView key="tabView" type="noTabsBezelBorder" id="TQR-zh-hpP">
+                    <tabView key="tabView" type="noTabsNoBorder" id="TQR-zh-hpP">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <font key="font" metaFont="message"/>
@@ -727,11 +727,11 @@
             </objects>
             <point key="canvasLocation" x="75" y="705"/>
         </scene>
-        <!--View Controller-->
+        <!--One View Controller-->
         <scene sceneID="P1F-yU-oYK">
             <objects>
-                <viewController id="3jG-gz-TPv" sceneMemberID="viewController">
-                    <view key="view" id="h7O-wY-FqP">
+                <viewController id="3jG-gz-TPv" customClass="OneViewController" customModule="TabViewControllerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="h7O-wY-FqP">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -744,6 +744,20 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <segmentedControl verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x6k-U8-9Il" customClass="XCSegmentedControl" customModule="TabViewControllerDemo" customModuleProvider="target">
+                                <rect key="frame" x="79" y="157" width="169" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="hn2-Ij-oma">
+                                    <font key="font" metaFont="system"/>
+                                    <segments>
+                                        <segment width="43"/>
+                                        <segment width="60" selected="YES" tag="1"/>
+                                        <segment width="59">
+                                            <nil key="label"/>
+                                        </segment>
+                                    </segments>
+                                </segmentedCell>
+                            </segmentedControl>
                         </subviews>
                     </view>
                 </viewController>
@@ -751,11 +765,11 @@
             </objects>
             <point key="canvasLocation" x="710" y="460"/>
         </scene>
-        <!--View Controller-->
+        <!--Two View Controller-->
         <scene sceneID="b81-jJ-4dz">
             <objects>
-                <viewController id="eJS-NR-sq5" sceneMemberID="viewController">
-                    <view key="view" id="4Wf-mO-suc">
+                <viewController id="eJS-NR-sq5" customClass="TwoViewController" customModule="TabViewControllerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="4Wf-mO-suc">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -776,4 +790,8 @@
             <point key="canvasLocation" x="710" y="869"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NSAdvanced" width="32" height="32"/>
+        <image name="NSApplicationIcon" width="128" height="128"/>
+    </resources>
 </document>

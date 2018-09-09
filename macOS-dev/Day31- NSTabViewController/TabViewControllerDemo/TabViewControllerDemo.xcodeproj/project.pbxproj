@@ -11,6 +11,9 @@
 		D873D6A82144ACE00036C0E5 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D873D6A72144ACE00036C0E5 /* TabViewController.swift */; };
 		D873D6AA2144ACE10036C0E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D873D6A92144ACE10036C0E5 /* Assets.xcassets */; };
 		D873D6AD2144ACE10036C0E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D873D6AB2144ACE10036C0E5 /* Main.storyboard */; };
+		D873D6B62144BA380036C0E5 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D873D6B52144BA380036C0E5 /* OneViewController.swift */; };
+		D873D6B82144BA480036C0E5 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D873D6B72144BA480036C0E5 /* TwoViewController.swift */; };
+		D873D6BA2144C3F90036C0E5 /* XCSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D873D6B92144C3F90036C0E5 /* XCSegmentedControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		D873D6AC2144ACE10036C0E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D873D6AE2144ACE10036C0E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D873D6AF2144ACE10036C0E5 /* TabViewControllerDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TabViewControllerDemo.entitlements; sourceTree = "<group>"; };
+		D873D6B52144BA380036C0E5 /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
+		D873D6B72144BA480036C0E5 /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
+		D873D6B92144C3F90036C0E5 /* XCSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCSegmentedControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,9 @@
 			children = (
 				D873D6A52144ACE00036C0E5 /* AppDelegate.swift */,
 				D873D6A72144ACE00036C0E5 /* TabViewController.swift */,
+				D873D6B52144BA380036C0E5 /* OneViewController.swift */,
+				D873D6B72144BA480036C0E5 /* TwoViewController.swift */,
+				D873D6B92144C3F90036C0E5 /* XCSegmentedControl.swift */,
 				D873D6A92144ACE10036C0E5 /* Assets.xcassets */,
 				D873D6AB2144ACE10036C0E5 /* Main.storyboard */,
 				D873D6AE2144ACE10036C0E5 /* Info.plist */,
@@ -133,8 +142,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D873D6B62144BA380036C0E5 /* OneViewController.swift in Sources */,
+				D873D6BA2144C3F90036C0E5 /* XCSegmentedControl.swift in Sources */,
 				D873D6A82144ACE00036C0E5 /* TabViewController.swift in Sources */,
 				D873D6A62144ACE00036C0E5 /* AppDelegate.swift in Sources */,
+				D873D6B82144BA480036C0E5 /* TwoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

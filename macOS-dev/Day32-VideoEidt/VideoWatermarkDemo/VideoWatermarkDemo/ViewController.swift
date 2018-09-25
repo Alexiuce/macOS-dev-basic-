@@ -14,13 +14,12 @@ class ViewController: NSViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let videoManager = XCVideoEidtManager(waterString: "WaterMark", waterPicture: "mark")
+        
     }
 
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
+   
 
 
 }

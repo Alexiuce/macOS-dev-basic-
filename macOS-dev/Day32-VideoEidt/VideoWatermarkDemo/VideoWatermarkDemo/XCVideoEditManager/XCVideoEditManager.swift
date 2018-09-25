@@ -7,3 +7,25 @@
 //
 
 import Foundation
+
+
+class XCVideoEidtManager {
+    
+    /// 水印文字
+    fileprivate var waterText: String
+    
+    /// 水印图片
+    fileprivate var waterImage: String
+    
+    init(waterString: String, waterPicture: String) {
+        waterText = waterString
+        waterImage = waterPicture
+    }
+    
+}
+
+extension XCVideoEidtManager{
+    func addWatermark(videoPath:URL) {
+        
+    }
+}

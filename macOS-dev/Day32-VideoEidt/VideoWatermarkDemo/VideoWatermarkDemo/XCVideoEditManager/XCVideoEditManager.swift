@@ -30,6 +30,10 @@ extension XCVideoEidtManager{
         let videoComposition = XCVideoComposition(videoAsset: videoAsset)
         print("\(videoComposition)")
         
+    
+        
+       
+        
         
         
     }

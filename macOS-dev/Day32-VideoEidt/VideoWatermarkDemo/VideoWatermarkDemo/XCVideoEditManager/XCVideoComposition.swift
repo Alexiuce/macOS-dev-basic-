@@ -4,7 +4,7 @@
 //
 //  Created by Alexcai on 2018/9/26.
 //  Copyright © 2018年 dongjiu. All rights reserved.
-//
+//  视频编辑构建类: 实现原始视频数据添加到可编辑的构建模版容器中,准备编辑
 
 import Foundation
 import AVFoundation

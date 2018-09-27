@@ -14,15 +14,19 @@ class XCVideoComposition {
     var videoDregree = 0
     var videoRenderSize = CGSize.zero
     
+    var videoPlayRange = kCMTimeRangeZero
+    
+    var videoTrack: AVAssetTrack?
     fileprivate var videoUrlAsset: AVURLAsset
     
     init(videoAsset: AVURLAsset) {
         videoUrlAsset = videoAsset
-        
-        // 1.准备视频轨道容器
-        guard let videoCompositionTrack = videoComposition.addMutableTrack(withMediaType: .video, preferredTrackID: kCMPersistentTrackID_Invalid) else{ return}
-        // 2.获取原始资源中的视频轨道数据
+        videoPlayRange = CMTimeRangeMake(kCMTimeZero, videoAsset.duration)
+        // 1.获取原始资源中的视频轨道数据
         guard let videoAssetTrack = videoAsset.tracks(withMediaType: .video).first else { return  }
+        videoTrack = videoAssetTrack
+        // 2.准备视频轨道容器
+        guard let videoCompositionTrack = videoComposition.addMutableTrack(withMediaType: .video, preferredTrackID: kCMPersistentTrackID_Invalid) else{ return}
         let videoTimeRange = CMTimeRangeMake(kCMTimeZero, videoAsset.duration)
         // 3.添加到视频轨道容器中
         try? videoCompositionTrack.insertTimeRange(videoTimeRange, of: videoAssetTrack, at: kCMTimeZero)
@@ -36,7 +40,6 @@ class XCVideoComposition {
         videoDregree = degreeFromVideoAssetTrack(videoAsset: videoAssetTrack)
         let isLandscape = videoDregree == 90 || videoDregree == 270
         videoRenderSize = isLandscape ? CGSize(width: videoAssetTrack.naturalSize.height, height: videoAssetTrack.naturalSize.width) : videoAssetTrack.naturalSize
-        
         
     }
     

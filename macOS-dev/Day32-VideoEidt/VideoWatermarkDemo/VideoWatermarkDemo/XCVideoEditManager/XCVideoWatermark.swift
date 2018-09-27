@@ -27,7 +27,6 @@ class XCVideoWatermark {
 }
 
 
-
 extension XCVideoWatermark{
     
     /// 添加图片水印
@@ -60,11 +59,40 @@ extension XCVideoWatermark{
         
         guard let videoTrack = editVideoComposition.videoTrack else { return  }
         let videoLayerInstruction = AVMutableVideoCompositionLayerInstruction(assetTrack: videoTrack)
+        let adjustTransform = videoTransformWithVideoDegree(degrees: editVideoComposition.videoDregree, nuturalSize: videoTrack.naturalSize)
+        videoLayerInstruction.setTransform(adjustTransform, at: kCMTimeZero)
         
         videoInstruction.layerInstructions = [videoLayerInstruction]
         videoMutableComposition.instructions = [videoInstruction]
-        
+    }
     
+    fileprivate func videoTransformWithVideoDegree(degrees: Int, nuturalSize: CGSize) -> CGAffineTransform{
+        
+        var transform = CGAffineTransform.identity
+        if (degrees != 0) {
+            var translateToCenter = CGAffineTransform.identity
+            if (degrees == 90) {
+                // 顺时针旋转90°
+                translateToCenter = CGAffineTransform(translationX: nuturalSize.height, y: 0.0);
+                transform = translateToCenter.rotated(by: CGFloat(Double.pi / 2))
+            } else if(degrees == 180){
+                // 顺时针旋转180°
+                translateToCenter = CGAffineTransform(translationX: nuturalSize.width, y: nuturalSize.height)
+                transform = translateToCenter.rotated(by: CGFloat(Double.pi))
+                
+            } else if(degrees == 270){
+                // 顺时针旋转270°
+                translateToCenter = CGAffineTransform(translationX: 0.0, y: nuturalSize.width)
+                transform = translateToCenter.rotated(by: CGFloat(Double.pi * 1.5))
+            }else if(degrees == -180){
+                // 绕x轴旋转180 上下颠倒视频
+                transform = CGAffineTransform.init(scaleX: 1.0, y: -1.0)
+                transform = transform.translatedBy(x: 0, y: -nuturalSize.height)
+            }
+        }
+        
+        return transform
+        
     }
     
 }

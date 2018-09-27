@@ -18,7 +18,17 @@ class XCVideoWatermark {
         editVideoComposition = videoComposition
     }
     
-    
-    
 }
 
+
+
+extension XCVideoWatermark{
+    
+    /// 添加图片水印
+    ///
+    /// - Parameter imageName: 图片名称
+    func addImageWatermark(imageName: String) {
+        
+    }
+    
+}

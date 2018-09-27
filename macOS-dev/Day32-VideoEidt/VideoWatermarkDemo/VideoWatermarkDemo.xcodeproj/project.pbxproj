@@ -12,6 +12,7 @@
 		D8DF7BE22159FCA0009CC3D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8DF7BE12159FCA0009CC3D2 /* Assets.xcassets */; };
 		D8DF7BE52159FCA0009CC3D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8DF7BE32159FCA0009CC3D2 /* Main.storyboard */; };
 		D8DF7BEF2159FD27009CC3D2 /* XCVideoEditManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DF7BEE2159FD27009CC3D2 /* XCVideoEditManager.swift */; };
+		D8E007B0215C567000022B1A /* XCVideoExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E007AF215C567000022B1A /* XCVideoExporter.swift */; };
 		D8FD5B41215B04630086E9CB /* XCVideoComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD5B40215B04630086E9CB /* XCVideoComposition.swift */; };
 		D8FD5B43215B097C0086E9CB /* XCVideoWatermark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD5B42215B097C0086E9CB /* XCVideoWatermark.swift */; };
 /* End PBXBuildFile section */
@@ -25,6 +26,7 @@
 		D8DF7BE62159FCA0009CC3D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8DF7BE72159FCA0009CC3D2 /* VideoWatermarkDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VideoWatermarkDemo.entitlements; sourceTree = "<group>"; };
 		D8DF7BEE2159FD27009CC3D2 /* XCVideoEditManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCVideoEditManager.swift; sourceTree = "<group>"; };
+		D8E007AF215C567000022B1A /* XCVideoExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCVideoExporter.swift; sourceTree = "<group>"; };
 		D8FD5B40215B04630086E9CB /* XCVideoComposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCVideoComposition.swift; sourceTree = "<group>"; };
 		D8FD5B42215B097C0086E9CB /* XCVideoWatermark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCVideoWatermark.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +78,7 @@
 				D8DF7BEE2159FD27009CC3D2 /* XCVideoEditManager.swift */,
 				D8FD5B40215B04630086E9CB /* XCVideoComposition.swift */,
 				D8FD5B42215B097C0086E9CB /* XCVideoWatermark.swift */,
+				D8E007AF215C567000022B1A /* XCVideoExporter.swift */,
 			);
 			path = XCVideoEditManager;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				D8DF7BEF2159FD27009CC3D2 /* XCVideoEditManager.swift in Sources */,
 				D8FD5B41215B04630086E9CB /* XCVideoComposition.swift in Sources */,
 				D8FD5B43215B097C0086E9CB /* XCVideoWatermark.swift in Sources */,
+				D8E007B0215C567000022B1A /* XCVideoExporter.swift in Sources */,
 				D8DF7BE02159FC9F009CC3D2 /* ViewController.swift in Sources */,
 				D8DF7BDE2159FC9F009CC3D2 /* AppDelegate.swift in Sources */,
 			);

@@ -12,10 +12,12 @@ class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
         let videoManager = XCVideoEidtManager(waterString: "WaterMark", waterPicture: "mark")
+        
+        let videoLocalUrl = URL(fileURLWithPath:"/Users/Alexcai/Desktop/video.mp4")
+        
+        videoManager.addWatermark(videoPath: videoLocalUrl)
         
     }
 

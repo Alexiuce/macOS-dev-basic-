@@ -15,8 +15,10 @@ class ViewController: NSViewController {
         
         let videoManager = XCVideoEidtManager(waterString: "WaterMark", waterPicture: "Group")
         
-        let videoLocalUrl = URL(fileURLWithPath:"/Users/Alexcai/Desktop/video.mp4")
+        guard let videoPath = Bundle.main.path(forResource: "video.mp4", ofType: nil, inDirectory: nil) else{return}
         
+        let videoLocalUrl = URL(fileURLWithPath:videoPath)
+       
         videoManager.addWatermark(videoPath: videoLocalUrl)
         
     }

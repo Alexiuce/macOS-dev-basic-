@@ -33,6 +33,11 @@ extension XCVideoEidtManager{
         let videoWatermark = XCVideoWatermark(videoComposition: videoComposition)
         videoWatermark.addImageWatermark(imageName: waterImage)
         
+        let videoExporter = XCVideoExporter(videoAsset: videoComposition.videoComposition, watermark: videoWatermark, output: "/Users/Alexcai/Desktop/video/abc.mov")
+        videoExporter.exportVideoToPath {
+            print("video finished")
+        }
+        
        
         
     

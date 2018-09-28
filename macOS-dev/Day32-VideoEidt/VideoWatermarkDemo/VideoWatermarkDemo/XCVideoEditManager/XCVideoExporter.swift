@@ -11,4 +11,31 @@ import AVFoundation
 
 class XCVideoExporter {
     
+    fileprivate var exportSession: AVAssetExportSession
+    
+    init(videoAsset:AVAsset, watermark: XCVideoWatermark, output: String) {
+        exportSession = AVAssetExportSession(asset: videoAsset, presetName: AVAssetExportPresetHEVCHighestQuality)!
+        exportSession.outputFileType =  AVFileType.mp4
+        exportSession.shouldOptimizeForNetworkUse = true
+        exportSession.videoComposition = watermark.videoMutableComposition
+        exportSession.outputURL = URL(string: output)
+    }
+    
+}
+
+
+extension XCVideoExporter{
+    func exportVideoToPath(completed: @escaping ()->()) {
+        
+        
+        
+        exportSession.exportAsynchronously {
+            if self.exportSession.status == .completed {
+                print("ok.....")
+                completed()
+            }else {
+                print(self.exportSession.status.rawValue)
+            }
+        }
+    }
 }

@@ -37,6 +37,7 @@ class XCVideoComposition {
         guard let audioAssetTrack = videoAsset.tracks(withMediaType: .audio).first else{return}
         // 6. 添加音频轨道数据到音频轨道容器
         try? audioCompostionTrack.insertTimeRange(videoTimeRange, of: audioAssetTrack, at: kCMTimeZero)
+        // 7. 设置视频方向
         videoDregree = degreeFromVideoAssetTrack(videoAsset: videoAssetTrack)
         let isLandscape = videoDregree == 90 || videoDregree == 270
         videoRenderSize = isLandscape ? CGSize(width: videoAssetTrack.naturalSize.height, height: videoAssetTrack.naturalSize.width) : videoAssetTrack.naturalSize

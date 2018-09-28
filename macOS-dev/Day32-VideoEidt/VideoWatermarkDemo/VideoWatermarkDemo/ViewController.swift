@@ -13,7 +13,7 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let videoManager = XCVideoEidtManager(waterString: "WaterMark", waterPicture: "mark")
+        let videoManager = XCVideoEidtManager(waterString: "WaterMark", waterPicture: "Group")
         
         let videoLocalUrl = URL(fileURLWithPath:"/Users/Alexcai/Desktop/video.mp4")
         

@@ -12,12 +12,12 @@ import AVFoundation
 class XCVideoEidtManager {
     
     /// 水印文字
-    fileprivate var waterText: String?
+    fileprivate var waterText: String
     
     /// 水印图片
-    fileprivate var waterImage: String?
+    fileprivate var waterImage: String
     
-    init(waterString: String?, waterPicture: String?) {
+    init(waterString: String, waterPicture: String) {
         waterText = waterString
         waterImage = waterPicture
     }
@@ -29,6 +29,13 @@ extension XCVideoEidtManager{
         let videoAsset = AVURLAsset(url: videoPath)
         let videoComposition = XCVideoComposition(videoAsset: videoAsset)
         print("\(videoComposition)")
+        
+        let videoWatermark = XCVideoWatermark(videoComposition: videoComposition)
+        videoWatermark.addImageWatermark(imageName: waterImage)
+        
+       
+        
+    
         
     }
 }

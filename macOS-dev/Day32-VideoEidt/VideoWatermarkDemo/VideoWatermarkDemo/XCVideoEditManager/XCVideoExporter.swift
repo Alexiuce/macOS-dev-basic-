@@ -18,7 +18,7 @@ class XCVideoExporter {
         exportSession.outputFileType =  AVFileType.mp4
         exportSession.shouldOptimizeForNetworkUse = true
         exportSession.videoComposition = watermark.videoMutableComposition
-        exportSession.outputURL = URL(string: output)
+        exportSession.outputURL = URL(fileURLWithPath: output)
     }
     
 }
@@ -26,8 +26,6 @@ class XCVideoExporter {
 
 extension XCVideoExporter{
     func exportVideoToPath(completed: @escaping ()->()) {
-        
-        
         
         exportSession.exportAsynchronously {
             if self.exportSession.status == .completed {

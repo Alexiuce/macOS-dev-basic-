@@ -22,8 +22,3 @@ class ViewController: NSViewController {
     }
 }
 
-extension ViewController{
-    override func mouseDown(with event: NSEvent) {
-        print("mouse down")
-    }
-}

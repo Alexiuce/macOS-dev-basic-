@@ -17,8 +17,8 @@ class XCWindowController: NSWindowController {
 //        window?.isMovableByWindowBackground = true
 //        window?.setFrame(wFrame, display: true)
         window?.backgroundColor = NSColor.clear
-        
     
+
         // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
     }
 

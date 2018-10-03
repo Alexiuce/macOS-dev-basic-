@@ -10,20 +10,20 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var label: NSTextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        guard let screenFrame = NSScreen.main?.frame else { return  }
-       
-        guard let imageRef =  CGWindowListCreateImage(screenFrame, CGWindowListOption.optionOnScreenOnly, kCGNullWindowID, CGWindowImageOption.bestResolution) else { return  }
-        let image = NSImage(cgImage: imageRef, size: <#T##NSSize#>)
         
-    
+        guard let screenSize = NSScreen.main?.frame.size else { return  }
         
-        // Do any additional setup after loading the view.
+//        view.layer?.backgroundColor = NSColor.red.cgColor
+        view.frame = CGRect(x: 0, y: 0, width: screenSize.width, height: screenSize.height-22.0)
+        label.frame = view.bounds;
     }
-
-
-
 }
 
+extension ViewController{
+    override func mouseDown(with event: NSEvent) {
+        print("mouse down")
+    }
+}

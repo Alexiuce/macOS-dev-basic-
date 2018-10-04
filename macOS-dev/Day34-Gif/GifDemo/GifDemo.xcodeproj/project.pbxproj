@@ -11,6 +11,7 @@
 		D8608C072166094700C590C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8608C062166094700C590C0 /* ViewController.swift */; };
 		D8608C092166094900C590C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8608C082166094900C590C0 /* Assets.xcassets */; };
 		D8608C0C2166094900C590C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8608C0A2166094900C590C0 /* Main.storyboard */; };
+		D8608C1521660A5400C590C0 /* timg.gif in Resources */ = {isa = PBXBuildFile; fileRef = D8608C1421660A5400C590C0 /* timg.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		D8608C0B2166094900C590C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8608C0D2166094900C590C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8608C0E2166094900C590C0 /* GifDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GifDemo.entitlements; sourceTree = "<group>"; };
+		D8608C1421660A5400C590C0 /* timg.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = timg.gif; path = "../../../Day6- NSImageView/NSImageViewDemo/NSImageViewDemo/timg.gif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				D8608C042166094700C590C0 /* AppDelegate.swift */,
 				D8608C062166094700C590C0 /* ViewController.swift */,
+				D8608C1421660A5400C590C0 /* timg.gif */,
 				D8608C082166094900C590C0 /* Assets.xcassets */,
 				D8608C0A2166094900C590C0 /* Main.storyboard */,
 				D8608C0D2166094900C590C0 /* Info.plist */,
@@ -122,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8608C092166094900C590C0 /* Assets.xcassets in Resources */,
+				D8608C1521660A5400C590C0 /* timg.gif in Resources */,
 				D8608C0C2166094900C590C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

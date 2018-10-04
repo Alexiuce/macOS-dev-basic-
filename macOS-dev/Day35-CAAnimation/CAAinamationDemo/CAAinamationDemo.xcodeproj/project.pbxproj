@@ -11,6 +11,7 @@
 		D8608C2521662C6F00C590C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8608C2421662C6F00C590C0 /* ViewController.swift */; };
 		D8608C2721662C7000C590C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8608C2621662C7000C590C0 /* Assets.xcassets */; };
 		D8608C2A21662C7000C590C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8608C2821662C7000C590C0 /* Main.storyboard */; };
+		D8608C33216633A700C590C0 /* NSBezier+CGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8608C32216633A700C590C0 /* NSBezier+CGPath.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		D8608C2921662C7000C590C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8608C2B21662C7000C590C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8608C2C21662C7000C590C0 /* CAAinamationDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CAAinamationDemo.entitlements; sourceTree = "<group>"; };
+		D8608C32216633A700C590C0 /* NSBezier+CGPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSBezier+CGPath.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				D8608C2221662C6F00C590C0 /* AppDelegate.swift */,
 				D8608C2421662C6F00C590C0 /* ViewController.swift */,
+				D8608C32216633A700C590C0 /* NSBezier+CGPath.swift */,
 				D8608C2621662C7000C590C0 /* Assets.xcassets */,
 				D8608C2821662C7000C590C0 /* Main.storyboard */,
 				D8608C2B21662C7000C590C0 /* Info.plist */,
@@ -135,6 +138,7 @@
 			files = (
 				D8608C2521662C6F00C590C0 /* ViewController.swift in Sources */,
 				D8608C2321662C6F00C590C0 /* AppDelegate.swift in Sources */,
+				D8608C33216633A700C590C0 /* NSBezier+CGPath.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

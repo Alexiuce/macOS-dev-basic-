@@ -709,12 +709,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G6a-aX-wOt">
-                                <rect key="frame" x="185" y="146" width="110" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G6a-aX-wOt">
+                                <rect key="frame" x="103" y="39" width="274" height="192"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="192" id="mkd-3S-WoQ"/>
+                                    <constraint firstAttribute="width" constant="274" id="psi-fI-OPh"/>
+                                </constraints>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" id="VnA-gN-1HH"/>
                             </imageView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="G6a-aX-wOt" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="EPi-pR-Egd"/>
+                            <constraint firstItem="G6a-aX-wOt" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="TIm-5q-iIo"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="G6a-aX-wOt" id="nix-DQ-cU3"/>

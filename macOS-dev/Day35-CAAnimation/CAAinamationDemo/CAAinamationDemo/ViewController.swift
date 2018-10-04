@@ -26,6 +26,8 @@ class ViewController: NSViewController {
         presentAnimationView.layer?.backgroundColor = NSColor.gray.cgColor
         presentAnimationView.layer?.addSublayer(animLayer)
         // Do any additional setup after loading the view.
+        
+        
     }
 
     override func mouseDown(with event: NSEvent) {
@@ -47,6 +49,7 @@ extension ViewController{
         moveAnim.isRemovedOnCompletion = false
         
         animLayer.add(moveAnim, forKey: nil)
+        
         
     }
     

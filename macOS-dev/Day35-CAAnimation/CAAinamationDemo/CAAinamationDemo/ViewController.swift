@@ -26,18 +26,20 @@ class ViewController: NSViewController {
         presentAnimationView.layer?.backgroundColor = NSColor.gray.cgColor
         presentAnimationView.layer?.addSublayer(animLayer)
         // Do any additional setup after loading the view.
-        
+        strokeEndAnmi()
         
     }
 
     override func mouseDown(with event: NSEvent) {
-        moveAnimDemo()
+        
     }
 }
 
 
 extension ViewController{
     func moveAnimDemo()  {
+        
+       
         
         let moveAnim = CABasicAnimation(keyPath: "position.x")
         
@@ -56,16 +58,27 @@ extension ViewController{
     func strokeEndAnmi()  {
         
     
-        let moveAnim = CABasicAnimation(keyPath: "strokeEnd")
+        let shaperLayer = CAShapeLayer()
+        shaperLayer.bounds = CGRect(x: 0, y: 0, width: 100, height: 100)
+        shaperLayer.backgroundColor = NSColor.orange.cgColor
         
-        moveAnim.fromValue = 0
-        moveAnim.toValue = 100
-        moveAnim.duration = 2
+        view.layer?.addSublayer(shaperLayer)
         
-        moveAnim.fillMode = .forwards
-        moveAnim.isRemovedOnCompletion = false
+        let shapePath = NSBezierPath(rect: shaperLayer.bounds)
+        shaperLayer.path = shapePath.cgPath
         
-        animLayer.add(moveAnim, forKey: nil)
+        
+//        let moveAnim = CABasicAnimation(keyPath: "strokeEnd")
+//
+//        moveAnim.fromValue = 0
+//        moveAnim.toValue = 0.5
+//        moveAnim.duration = 2
+//
+//        moveAnim.fillMode = .forwards
+//        moveAnim.isRemovedOnCompletion = false
+//
+//        shaperLayer.add(moveAnim, forKey: nil)
+        
     }
 }
 

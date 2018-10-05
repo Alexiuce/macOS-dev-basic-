@@ -12,6 +12,8 @@ class ViewController: NSViewController {
 
     @IBOutlet var presentAnimationView: NSView!
     
+    var sLayer: CAShapeLayer!
+    
     /** 动画展示layer */
     lazy var animLayer : CALayer = {
         let layer = CALayer()
@@ -26,12 +28,17 @@ class ViewController: NSViewController {
         presentAnimationView.layer?.backgroundColor = NSColor.gray.cgColor
         presentAnimationView.layer?.addSublayer(animLayer)
         // Do any additional setup after loading the view.
-        strokeEndAnmi()
+        let shaperLayer = CAShapeLayer()
+        
+        
+        view.layer?.addSublayer(shaperLayer)
+        sLayer = shaperLayer
+      
         
     }
 
     override func mouseDown(with event: NSEvent) {
-        
+          strokeEndAnmi()
     }
 }
 
@@ -56,28 +63,24 @@ extension ViewController{
     }
     
     func strokeEndAnmi()  {
-        
     
-        let shaperLayer = CAShapeLayer()
-        shaperLayer.bounds = CGRect(x: 0, y: 0, width: 100, height: 100)
-        shaperLayer.backgroundColor = NSColor.orange.cgColor
         
-        view.layer?.addSublayer(shaperLayer)
-        
-        let shapePath = NSBezierPath(rect: shaperLayer.bounds)
-        shaperLayer.path = shapePath.cgPath
+        let shapePath = NSBezierPath(rect: CGRect(x: 10, y: 10, width: 90, height: 10))
+        sLayer.path = shapePath.cgPath
+        sLayer.fillColor = NSColor.orange.cgColor
         
         
-//        let moveAnim = CABasicAnimation(keyPath: "strokeEnd")
-//
-//        moveAnim.fromValue = 0
-//        moveAnim.toValue = 0.5
-//        moveAnim.duration = 2
-//
-//        moveAnim.fillMode = .forwards
-//        moveAnim.isRemovedOnCompletion = false
-//
-//        shaperLayer.add(moveAnim, forKey: nil)
+        let moveAnim = CABasicAnimation(keyPath: "strokeEnd")
+
+
+        moveAnim.fromValue = NSNumber.init(value: 0)
+        moveAnim.toValue = NSNumber.init(value: 0.5)
+        moveAnim.duration = 6
+
+        moveAnim.fillMode = .forwards
+        moveAnim.isRemovedOnCompletion = false
+
+        sLayer.add(moveAnim, forKey: nil)
         
     }
 }

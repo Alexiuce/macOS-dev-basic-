@@ -61,6 +61,7 @@ class ViewController: NSViewController {
         layer.fillColor = NSColor.clear.cgColor
         layer.strokeColor = NSColor.black.cgColor
         
+        layer.strokeEnd = 0
         view.layer?.addSublayer(layer)
         view.layer?.addSublayer(layer1)
         view.layer?.addSublayer(layer2)

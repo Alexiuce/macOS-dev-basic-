@@ -36,7 +36,8 @@ class ViewController: NSViewController {
         
         let startPoint = CGPoint(x: 50, y: 300)
         let endPoint = CGPoint(x:300,y:300)
-        let controlPoint = CGPoint(x:170, y:400)
+        let controlPoint = CGPoint(x:100, y:400)
+        let controlPoint2 = CGPoint(x: 250, y: 200)
         
         let layer1 = CALayer()
         layer1.frame = CGRect(x:startPoint.x, y:startPoint.y,width: 5,height: 5)
@@ -50,11 +51,15 @@ class ViewController: NSViewController {
         layer3.frame = CGRect(x:controlPoint.x, y:controlPoint.y,width: 5, height:5)
         layer3.backgroundColor = NSColor.red.cgColor
         
+        let layer4 = CALayer()
+        layer4.frame = CGRect(x: controlPoint2.x, y: controlPoint2.y, width: 5, height: 5)
+        layer4.backgroundColor = NSColor.red.cgColor
+        
         let path = NSBezierPath()
         let layer = CAShapeLayer()
         
         path.move(to: startPoint)
-        path.curve(to: endPoint, controlPoint1: controlPoint, controlPoint2: controlPoint)
+        path.curve(to: endPoint, controlPoint1: controlPoint, controlPoint2: controlPoint2)
 
         
         layer.path = path.cgPath
@@ -66,6 +71,7 @@ class ViewController: NSViewController {
         view.layer?.addSublayer(layer1)
         view.layer?.addSublayer(layer2)
         view.layer?.addSublayer(layer3)
+        view.layer?.addSublayer(layer4)
         sLayer = layer
       
         

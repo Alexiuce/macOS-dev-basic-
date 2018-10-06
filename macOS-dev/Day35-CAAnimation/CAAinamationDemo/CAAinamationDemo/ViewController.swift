@@ -29,52 +29,8 @@ class ViewController: NSViewController {
         presentAnimationView.layer?.addSublayer(animLayer)
         // Do any additional setup after loading the view.
         let shaperLayer = CAShapeLayer()
-        
-        
         view.layer?.addSublayer(shaperLayer)
-        sLayer = shaperLayer
-        
-        let startPoint = CGPoint(x: 50, y: 300)
-        let endPoint = CGPoint(x:300,y:300)
-        let controlPoint = CGPoint(x:100, y:400)
-        let controlPoint2 = CGPoint(x: 250, y: 200)
-        
-        let layer1 = CALayer()
-        layer1.frame = CGRect(x:startPoint.x, y:startPoint.y,width: 5,height: 5)
-        layer1.backgroundColor = NSColor.red.cgColor
-        
-        let layer2 = CALayer()
-        layer2.frame = CGRect(x:endPoint.x, y:endPoint.y, width:5,height: 5)
-        layer2.backgroundColor = NSColor.red.cgColor
-        
-        let layer3 = CALayer()
-        layer3.frame = CGRect(x:controlPoint.x, y:controlPoint.y,width: 5, height:5)
-        layer3.backgroundColor = NSColor.red.cgColor
-        
-        let layer4 = CALayer()
-        layer4.frame = CGRect(x: controlPoint2.x, y: controlPoint2.y, width: 5, height: 5)
-        layer4.backgroundColor = NSColor.red.cgColor
-        
-        let path = NSBezierPath()
-        let layer = CAShapeLayer()
-        
-        path.move(to: startPoint)
-        path.curve(to: endPoint, controlPoint1: controlPoint, controlPoint2: controlPoint2)
-
-        
-        layer.path = path.cgPath
-        layer.fillColor = NSColor.clear.cgColor
-        layer.strokeColor = NSColor.black.cgColor
-        
-        layer.strokeEnd = 0
-        view.layer?.addSublayer(layer)
-        view.layer?.addSublayer(layer1)
-        view.layer?.addSublayer(layer2)
-        view.layer?.addSublayer(layer3)
-        view.layer?.addSublayer(layer4)
-        sLayer = layer
-      
-        
+        setupCAShaperLayer()
     }
 
     override func mouseDown(with event: NSEvent) {
@@ -134,6 +90,48 @@ extension ViewController{
 //
 //        sLayer.add(moveAnim, forKey: nil)
         
+    }
+    
+    fileprivate func setupCAShaperLayer(){
+        let startPoint = CGPoint(x: 50, y: 300)
+        let endPoint = CGPoint(x:300,y:300)
+        let controlPoint = CGPoint(x:100, y:400)
+        let controlPoint2 = CGPoint(x: 250, y: 200)
+        
+        let layer1 = CALayer()
+        layer1.frame = CGRect(x:startPoint.x, y:startPoint.y,width: 5,height: 5)
+        layer1.backgroundColor = NSColor.red.cgColor
+        
+        let layer2 = CALayer()
+        layer2.frame = CGRect(x:endPoint.x, y:endPoint.y, width:5,height: 5)
+        layer2.backgroundColor = NSColor.red.cgColor
+        
+        let layer3 = CALayer()
+        layer3.frame = CGRect(x:controlPoint.x, y:controlPoint.y,width: 5, height:5)
+        layer3.backgroundColor = NSColor.red.cgColor
+        
+        let layer4 = CALayer()
+        layer4.frame = CGRect(x: controlPoint2.x, y: controlPoint2.y, width: 5, height: 5)
+        layer4.backgroundColor = NSColor.red.cgColor
+        
+        let path = NSBezierPath()
+        let layer = CAShapeLayer()
+        
+        path.move(to: startPoint)
+        path.curve(to: endPoint, controlPoint1: controlPoint, controlPoint2: controlPoint2)
+        
+        
+        layer.path = path.cgPath
+        layer.fillColor = NSColor.clear.cgColor
+        layer.strokeColor = NSColor.yellow.cgColor
+        
+        layer.strokeEnd = 0
+        view.layer?.addSublayer(layer)
+        view.layer?.addSublayer(layer1)
+        view.layer?.addSublayer(layer2)
+        view.layer?.addSublayer(layer3)
+        view.layer?.addSublayer(layer4)
+        sLayer = layer
     }
 }
 

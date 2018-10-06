@@ -72,7 +72,7 @@ class ViewController: NSViewController {
     }
 
     override func mouseDown(with event: NSEvent) {
-          strokeEndAnmi()
+          sLayer.strokeEnd += 0.2
     }
 }
 

@@ -34,7 +34,7 @@ class ViewController: NSViewController {
     }
 
     override func mouseDown(with event: NSEvent) {
-          sLayer.strokeEnd += 0.2
+        strokeEndAnmi()
     }
 }
 
@@ -65,6 +65,8 @@ extension ViewController{
         animation.fromValue = 0
         animation.toValue = 1
         animation.duration = 2
+        animation.fillMode = .forwards
+        animation.isRemovedOnCompletion = false
         sLayer.add(animation, forKey: "")
         
 //        let animation1 = CABasicAnimation(keyPath: "strokeStart")

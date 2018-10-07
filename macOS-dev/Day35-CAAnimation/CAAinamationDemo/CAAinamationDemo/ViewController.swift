@@ -40,10 +40,56 @@ class ViewController: NSViewController {
 
 
 extension ViewController{
+    
+    fileprivate func keyAnimationDemo(){
+        let keyAnimation = CAKeyframeAnimation(keyPath: "position.x")
+        /**
+         transform.scale = 比例轉換
+         
+         transform.scale.x = 宽的比例轉換
+         
+         transform.scale.y = 高的比例轉換
+         
+         transform.rotation.z = 平面圖的旋轉
+         
+         opacity = 透明度
+         
+         margin=边框间隔?
+         
+         zPosition = 平面图的位置
+         
+         backgroundColor = 背景色
+         
+         cornerRadius = layer的角度
+         
+         borderWidth = 边框宽度
+         
+         contents = 内容?
+         
+         bounds = 大小?
+         
+         contentsRect = 内容矩形
+         
+         frame = 位置
+         
+         hidden = 隐藏
+         
+         mask = 标记
+         
+         maskToBounds
+         
+         position = 位置
+         
+         shadowOffset = 阴影偏移?
+         
+         shadowColor = 阴影颜色
+         
+         shadowRadius = 阴影角度
+         
+         */
+    }
+    
     func moveAnimDemo()  {
-        
-       
-        
         let moveAnim = CABasicAnimation(keyPath: "position.x")
         
         moveAnim.fromValue = 0
@@ -54,12 +100,9 @@ extension ViewController{
         moveAnim.isRemovedOnCompletion = false
         
         animLayer.add(moveAnim, forKey: nil)
-        
-        
     }
     
     func strokeEndAnmi()  {
-    
         
         let animation = CABasicAnimation(keyPath: "strokeEnd")
         animation.fromValue = 0

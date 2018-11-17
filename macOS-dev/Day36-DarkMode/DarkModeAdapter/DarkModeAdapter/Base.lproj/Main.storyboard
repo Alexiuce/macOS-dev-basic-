@@ -713,6 +713,11 @@
                                 <rect key="frame" x="10" y="118" width="163" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </customView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PTy-Qd-i5b">
+                                <rect key="frame" x="238" y="130" width="84" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="big_star" id="o6z-sd-Rnz"/>
+                            </imageView>
                         </subviews>
                     </view>
                     <connections>
@@ -724,4 +729,7 @@
             <point key="canvasLocation" x="75" y="655"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="big_star" width="33" height="33"/>
+    </resources>
 </document>

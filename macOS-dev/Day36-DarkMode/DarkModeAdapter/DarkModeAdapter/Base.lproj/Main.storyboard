@@ -709,24 +709,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <customView wantsLayer="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PyU-Tu-rAc">
+                            <customView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PyU-Tu-rAc">
                                 <rect key="frame" x="10" y="118" width="163" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </customView>
-                            <imageView wantsLayer="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PTy-Qd-i5b">
+                            <imageView wantsLayer="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PTy-Qd-i5b">
                                 <rect key="frame" x="238" y="130" width="86" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="YpU-1T-qL7"/>
+                                </constraints>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="Star" id="o6z-sd-Rnz"/>
                             </imageView>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p4q-i7-DDi">
-                                <rect key="frame" x="100" y="20" width="73" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="p4q-i7-DDi">
+                                <rect key="frame" x="140" y="20" width="33" height="67"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Star" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="URP-h4-JHk">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mup-Wg-Fxf">
+                                <rect key="frame" x="271" y="45" width="37" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="tMm-eH-cPN">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="PyU-Tu-rAc" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="10" id="BmX-ZB-Frc"/>
+                            <constraint firstAttribute="bottom" secondItem="mup-Wg-Fxf" secondAttribute="bottom" constant="45" id="Byj-Y8-i38"/>
+                            <constraint firstItem="mup-Wg-Fxf" firstAttribute="top" secondItem="PTy-Qd-i5b" secondAttribute="bottom" constant="68" id="GFa-dM-GqI"/>
+                            <constraint firstItem="p4q-i7-DDi" firstAttribute="top" secondItem="PyU-Tu-rAc" secondAttribute="bottom" constant="31" id="MWh-8g-5Ff"/>
+                            <constraint firstItem="PTy-Qd-i5b" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="238" id="Mo5-IR-8X6"/>
+                            <constraint firstItem="PTy-Qd-i5b" firstAttribute="leading" secondItem="PyU-Tu-rAc" secondAttribute="trailing" constant="65" id="UIV-m8-EnC"/>
+                            <constraint firstItem="mup-Wg-Fxf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="p4q-i7-DDi" secondAttribute="trailing" constant="8" symbolic="YES" id="XE5-7j-vZd"/>
+                            <constraint firstItem="mup-Wg-Fxf" firstAttribute="centerY" secondItem="p4q-i7-DDi" secondAttribute="centerY" id="i9K-5B-Wv5"/>
+                            <constraint firstItem="PyU-Tu-rAc" firstAttribute="trailing" secondItem="p4q-i7-DDi" secondAttribute="trailing" id="lhq-4C-81g"/>
+                            <constraint firstItem="PTy-Qd-i5b" firstAttribute="top" secondItem="PyU-Tu-rAc" secondAttribute="top" id="neP-aQ-1W9"/>
+                            <constraint firstAttribute="trailing" secondItem="mup-Wg-Fxf" secondAttribute="trailing" constant="174" id="tVQ-eM-35D"/>
+                            <constraint firstAttribute="bottom" secondItem="PyU-Tu-rAc" secondAttribute="bottom" constant="118" id="tye-cD-iBt"/>
+                            <constraint firstItem="PTy-Qd-i5b" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="56" id="yAw-Oq-n4t"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="adaptedView" destination="PyU-Tu-rAc" id="EeF-PR-WWm"/>

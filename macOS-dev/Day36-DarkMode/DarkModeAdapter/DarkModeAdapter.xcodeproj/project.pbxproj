@@ -11,6 +11,7 @@
 		D837FCD5219FD9AF00FB7A96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D837FCD4219FD9AF00FB7A96 /* ViewController.swift */; };
 		D837FCD7219FD9B000FB7A96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D837FCD6219FD9B000FB7A96 /* Assets.xcassets */; };
 		D837FCDA219FD9B000FB7A96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D837FCD8219FD9B000FB7A96 /* Main.storyboard */; };
+		D83840C521A1357800AC7255 /* XCMyCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83840C421A1357800AC7255 /* XCMyCustomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		D837FCD9219FD9B000FB7A96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D837FCDB219FD9B000FB7A96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D837FCDC219FD9B000FB7A96 /* DarkModeAdapter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DarkModeAdapter.entitlements; sourceTree = "<group>"; };
+		D83840C421A1357800AC7255 /* XCMyCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCMyCustomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				D837FCD2219FD9AF00FB7A96 /* AppDelegate.swift */,
 				D837FCD4219FD9AF00FB7A96 /* ViewController.swift */,
+				D83840C421A1357800AC7255 /* XCMyCustomView.swift */,
 				D837FCD6219FD9B000FB7A96 /* Assets.xcassets */,
 				D837FCD8219FD9B000FB7A96 /* Main.storyboard */,
 				D837FCDB219FD9B000FB7A96 /* Info.plist */,
@@ -133,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D83840C521A1357800AC7255 /* XCMyCustomView.swift in Sources */,
 				D837FCD5219FD9AF00FB7A96 /* ViewController.swift in Sources */,
 				D837FCD3219FD9AF00FB7A96 /* AppDelegate.swift in Sources */,
 			);

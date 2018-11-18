@@ -716,12 +716,13 @@
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PTy-Qd-i5b">
                                 <rect key="frame" x="238" y="130" width="84" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="big_star" id="o6z-sd-Rnz"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="o6z-sd-Rnz"/>
                             </imageView>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="adaptedView" destination="PyU-Tu-rAc" id="EeF-PR-WWm"/>
+                        <outlet property="starImageView" destination="PTy-Qd-i5b" id="eCS-U9-kAc"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -729,7 +730,4 @@
             <point key="canvasLocation" x="75" y="655"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="big_star" width="33" height="33"/>
-    </resources>
 </document>

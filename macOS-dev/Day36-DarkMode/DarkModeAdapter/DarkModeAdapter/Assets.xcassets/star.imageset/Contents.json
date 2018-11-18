@@ -6,7 +6,7 @@
     },
     {
       "idiom" : "mac",
-      "filename" : "big_star_click@2x.png",
+      "filename" : "big_star@2x.png",
       "appearances" : [
         {
           "appearance" : "luminosity",
@@ -17,7 +17,7 @@
     },
     {
       "idiom" : "mac",
-      "filename" : "big_star@2x.png",
+      "filename" : "big_star_click@2x.png",
       "appearances" : [
         {
           "appearance" : "luminosity",
@@ -32,7 +32,7 @@
     },
     {
       "idiom" : "mac",
-      "filename" : "big_star_click@3x.png",
+      "filename" : "big_star@3x.png",
       "appearances" : [
         {
           "appearance" : "luminosity",
@@ -43,7 +43,7 @@
     },
     {
       "idiom" : "mac",
-      "filename" : "big_star@3x.png",
+      "filename" : "big_star_click@3x.png",
       "appearances" : [
         {
           "appearance" : "luminosity",

@@ -28,7 +28,6 @@ class ViewController: NSViewController {
 //        adaptedView.layer?.backgroundColor = NSColor.labelColor.cgColor;
         
         
-        starImageView.image = NSImage(named: "star")
     }
 
     override var representedObject: Any? {

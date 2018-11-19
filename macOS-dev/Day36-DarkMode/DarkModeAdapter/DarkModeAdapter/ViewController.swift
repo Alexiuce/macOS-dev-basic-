@@ -47,6 +47,11 @@ class ViewController: NSViewController {
          NSColor.systemGray
          NSColor.systemPink
          */
+        _ = NSImage(size: NSMakeSize(0, 0), flipped: true) { (rect) -> Bool in
+        
+        /** 返回值表示图片是否创建成功*/
+        return true
+        }
         
     }
 

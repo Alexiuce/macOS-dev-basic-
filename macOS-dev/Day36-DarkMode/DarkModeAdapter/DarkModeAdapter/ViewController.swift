@@ -28,6 +28,13 @@ class ViewController: NSViewController {
 //        adaptedView.layer?.backgroundColor = NSColor.labelColor.cgColor;
         adaptedView.layer?.backgroundColor = NSColor.controlBackgroundColor.cgColor;
         
+        /**
+         NSAppearance.Name.darkAqua
+         NSAppearance.Name.vibrantDark
+         NSAppearance.Name.accessibilityHighContrastDarkAqua
+         NSAppearance.Name.accessibilityHighContrastVibrantLight
+         */
+        
         
     }
 

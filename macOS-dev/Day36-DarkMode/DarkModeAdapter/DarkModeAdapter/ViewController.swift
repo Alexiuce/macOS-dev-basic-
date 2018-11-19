@@ -26,7 +26,7 @@ class ViewController: NSViewController {
          */
 
         view.appearance? = NSAppearance.init(named: NSAppearance.Name.aqua)!
-        print("\(String(describing: view.appearance?.name.rawValue))")
+        print("\(view.effectiveAppearance.name.rawValue)")
         
         
         /** 1. 颜色硬编码设置视图背景色 : 这种情况下,无论是light 或者dark 模式,颜色都是固定的值,不会根据主题进行适配 */
@@ -39,7 +39,12 @@ class ViewController: NSViewController {
 //        adaptedView.layer?.backgroundColor = NSColor.labelColor.cgColor;
         adaptedView.layer?.backgroundColor = NSColor.controlBackgroundColor.cgColor;
         
-        
+    }
+    override func viewDidAppear() {
+        super.viewDidAppear()
+        view.window?.appearance = NSAppearance.init(named: NSAppearance.Name.aqua)!
+//        view.appearance? = NSAppearance.init(named: NSAppearance.Name.aqua)!
+        print("\(view.effectiveAppearance.name.rawValue)")
         
     }
 

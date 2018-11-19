@@ -19,12 +19,13 @@ class ViewController: NSViewController {
         super.viewDidLoad()
         /** 设置view的appearance 效果 */
         /**
+         NSAppearance.Name.Aqua        : Light 默认设置
          NSAppearance.Name.darkAqua    : Dark 模式
          NSAppearance.Name.vibrantDark    : 仅可用于 Visual effect view
-         NSAppearance.Name.accessibilityHighContrastDarkAqua
-         NSAppearance.Name.accessibilityHighContrastVibrantLight
+         NSAppearance.Name.accessibilityHighContrastDarkAqua     : 高对比的Dark 模式 (通常用于image)
+         NSAppearance.Name.accessibilityHighContrastVibrantLight  : 高对比的毛玻璃 效果 ,用于visual effec view;
          */
-
+        /** 此次对view 的appearance进行赋值是无效的,因为 window的生命周期方法尚未执行 (具体可参考基础课程视频或项目代码)*/
         view.appearance? = NSAppearance.init(named: NSAppearance.Name.aqua)!
         print("\(view.effectiveAppearance.name.rawValue)")
         
@@ -42,9 +43,9 @@ class ViewController: NSViewController {
     }
     override func viewDidAppear() {
         super.viewDidAppear()
-        view.window?.appearance = NSAppearance.init(named: NSAppearance.Name.aqua)!
+//        view.window?.appearance = NSAppearance.init(named: NSAppearance.Name.aqua)!
 //        view.appearance? = NSAppearance.init(named: NSAppearance.Name.aqua)!
-        print("\(view.effectiveAppearance.name.rawValue)")
+//        print("\(view.effectiveAppearance.name.rawValue)")
         
     }
 

@@ -17,7 +17,18 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        /** 设置view的appearance 效果 */
+        /**
+         NSAppearance.Name.darkAqua    : Dark 模式
+         NSAppearance.Name.vibrantDark    : 仅可用于 Visual effect view
+         NSAppearance.Name.accessibilityHighContrastDarkAqua
+         NSAppearance.Name.accessibilityHighContrastVibrantLight
+         */
 
+        view.appearance? = NSAppearance.init(named: NSAppearance.Name.aqua)!
+        print("\(String(describing: view.appearance?.name.rawValue))")
+        
+        
         /** 1. 颜色硬编码设置视图背景色 : 这种情况下,无论是light 或者dark 模式,颜色都是固定的值,不会根据主题进行适配 */
 //        adaptedView.layer?.backgroundColor = NSColor.red.cgColor
         
@@ -28,12 +39,6 @@ class ViewController: NSViewController {
 //        adaptedView.layer?.backgroundColor = NSColor.labelColor.cgColor;
         adaptedView.layer?.backgroundColor = NSColor.controlBackgroundColor.cgColor;
         
-        /**
-         NSAppearance.Name.darkAqua
-         NSAppearance.Name.vibrantDark
-         NSAppearance.Name.accessibilityHighContrastDarkAqua
-         NSAppearance.Name.accessibilityHighContrastVibrantLight
-         */
         
         
     }

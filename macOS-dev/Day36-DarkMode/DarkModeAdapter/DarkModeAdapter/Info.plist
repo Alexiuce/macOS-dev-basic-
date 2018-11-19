@@ -35,6 +35,6 @@
 	<key>CFBundleGetInfoString</key>
 	<string></string>
 	<key>NSRequiresAquaSystemAppearance</key>
-	<false/>
+	<true/>
 </dict>
 </plist>

@@ -30,4 +30,6 @@ class XCMyCustomView: NSView {
         
     }
     
+    
+    
 }

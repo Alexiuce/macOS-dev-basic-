@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D490D0F9E6CF7238A52980F /* libPods-XCWallpaper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1EF261743984A1DFF2C24B /* libPods-XCWallpaper.a */; };
+		D895EA8F1EE2C85300F5A345 /* XCCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D895EA8E1EE2C85300F5A345 /* XCCategoryModel.m */; };
+		D8A1928B1EE2BDFC0061B21B /* NSView+XCFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A192831EE2BDFC0061B21B /* NSView+XCFrame.m */; };
+		D8A1928C1EE2BDFC0061B21B /* XCTitleController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A192861EE2BDFC0061B21B /* XCTitleController.m */; };
+		D8A1928D1EE2BDFC0061B21B /* XCTitleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8A192871EE2BDFC0061B21B /* XCTitleController.xib */; };
+		D8A1928E1EE2BDFC0061B21B /* XCNotificationName.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A1928A1EE2BDFC0061B21B /* XCNotificationName.m */; };
+		D8A192971EE2BE720061B21B /* XCHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A192911EE2BE720061B21B /* XCHomeController.m */; };
+		D8A192981EE2BE720061B21B /* XCHomeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A192931EE2BE720061B21B /* XCHomeItem.m */; };
+		D8A192991EE2BE720061B21B /* XCHomeItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8A192941EE2BE720061B21B /* XCHomeItem.xib */; };
+		D8A1929A1EE2BE720061B21B /* XCLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A192961EE2BE720061B21B /* XCLayout.m */; };
+		D8A1929E1EE2BE7A0061B21B /* XCWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A1929D1EE2BE7A0061B21B /* XCWindowController.m */; };
+		D8DDBAC11EDD24F0008C7626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8DDBAC01EDD24F0008C7626 /* Assets.xcassets */; };
+		D8DF99B91EDBB69A001A71C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DF99B81EDBB69A001A71C7 /* AppDelegate.m */; };
+		D8DF99BC1EDBB69A001A71C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DF99BB1EDBB69A001A71C7 /* main.m */; };
+		D8DF99C41EDBB69A001A71C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8DF99C21EDBB69A001A71C7 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4F1EF261743984A1DFF2C24B /* libPods-XCWallpaper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XCWallpaper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B063E5AC4F5E24E4F2CB9BC /* Pods-XCWallpaper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCWallpaper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XCWallpaper/Pods-XCWallpaper.debug.xcconfig"; sourceTree = "<group>"; };
+		D895EA8D1EE2C85300F5A345 /* XCCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCCategoryModel.h; sourceTree = "<group>"; };
+		D895EA8E1EE2C85300F5A345 /* XCCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCCategoryModel.m; sourceTree = "<group>"; };
+		D8A1927B1EE294700061B21B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D8A192821EE2BDFC0061B21B /* NSView+XCFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+XCFrame.h"; sourceTree = "<group>"; };
+		D8A192831EE2BDFC0061B21B /* NSView+XCFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+XCFrame.m"; sourceTree = "<group>"; };
+		D8A192851EE2BDFC0061B21B /* XCTitleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCTitleController.h; sourceTree = "<group>"; };
+		D8A192861EE2BDFC0061B21B /* XCTitleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCTitleController.m; sourceTree = "<group>"; };
+		D8A192871EE2BDFC0061B21B /* XCTitleController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCTitleController.xib; sourceTree = "<group>"; };
+		D8A192891EE2BDFC0061B21B /* XCNotificationName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCNotificationName.h; sourceTree = "<group>"; };
+		D8A1928A1EE2BDFC0061B21B /* XCNotificationName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCNotificationName.m; sourceTree = "<group>"; };
+		D8A192901EE2BE720061B21B /* XCHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCHomeController.h; sourceTree = "<group>"; };
+		D8A192911EE2BE720061B21B /* XCHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCHomeController.m; sourceTree = "<group>"; };
+		D8A192921EE2BE720061B21B /* XCHomeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCHomeItem.h; sourceTree = "<group>"; };
+		D8A192931EE2BE720061B21B /* XCHomeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCHomeItem.m; sourceTree = "<group>"; };
+		D8A192941EE2BE720061B21B /* XCHomeItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCHomeItem.xib; sourceTree = "<group>"; };
+		D8A192951EE2BE720061B21B /* XCLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCLayout.h; sourceTree = "<group>"; };
+		D8A192961EE2BE720061B21B /* XCLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCLayout.m; sourceTree = "<group>"; };
+		D8A1929C1EE2BE7A0061B21B /* XCWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCWindowController.h; sourceTree = "<group>"; };
+		D8A1929D1EE2BE7A0061B21B /* XCWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCWindowController.m; sourceTree = "<group>"; };
+		D8DDBAC01EDD24F0008C7626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8DF99B41EDBB69A001A71C7 /* XCWallpaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCWallpaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8DF99B71EDBB69A001A71C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D8DF99B81EDBB69A001A71C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D8DF99BB1EDBB69A001A71C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D8DF99C31EDBB69A001A71C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8DF99C51EDBB69A001A71C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8DF99D81EDBD476001A71C7 /* XCWallpaper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XCWallpaper.entitlements; sourceTree = "<group>"; };
+		FA67C8336F63A790EF3EDAF9 /* Pods-XCWallpaper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCWallpaper.release.xcconfig"; path = "Pods/Target Support Files/Pods-XCWallpaper/Pods-XCWallpaper.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8DF99B11EDBB69A001A71C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D490D0F9E6CF7238A52980F /* libPods-XCWallpaper.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01A909DE72EC58EA4DF6C810 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F1EF261743984A1DFF2C24B /* libPods-XCWallpaper.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B56B89342B7CF65367A207BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B063E5AC4F5E24E4F2CB9BC /* Pods-XCWallpaper.debug.xcconfig */,
+				FA67C8336F63A790EF3EDAF9 /* Pods-XCWallpaper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D8A192801EE2BDB40061B21B /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				D8A1929B1EE2BE7A0061B21B /* WindowController */,
+				D8A1928F1EE2BE720061B21B /* Home */,
+				D8A192811EE2BDFC0061B21B /* Category */,
+				D8A192841EE2BDFC0061B21B /* TitleController */,
+				D8A192881EE2BDFC0061B21B /* XCNotificationCenter */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		D8A192811EE2BDFC0061B21B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D8A192821EE2BDFC0061B21B /* NSView+XCFrame.h */,
+				D8A192831EE2BDFC0061B21B /* NSView+XCFrame.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		D8A192841EE2BDFC0061B21B /* TitleController */ = {
+			isa = PBXGroup;
+			children = (
+				D8A192851EE2BDFC0061B21B /* XCTitleController.h */,
+				D8A192861EE2BDFC0061B21B /* XCTitleController.m */,
+				D8A192871EE2BDFC0061B21B /* XCTitleController.xib */,
+			);
+			path = TitleController;
+			sourceTree = "<group>";
+		};
+		D8A192881EE2BDFC0061B21B /* XCNotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				D8A192891EE2BDFC0061B21B /* XCNotificationName.h */,
+				D8A1928A1EE2BDFC0061B21B /* XCNotificationName.m */,
+			);
+			path = XCNotificationCenter;
+			sourceTree = "<group>";
+		};
+		D8A1928F1EE2BE720061B21B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D8A192901EE2BE720061B21B /* XCHomeController.h */,
+				D8A192911EE2BE720061B21B /* XCHomeController.m */,
+				D8A192921EE2BE720061B21B /* XCHomeItem.h */,
+				D8A192931EE2BE720061B21B /* XCHomeItem.m */,
+				D8A192941EE2BE720061B21B /* XCHomeItem.xib */,
+				D8A192951EE2BE720061B21B /* XCLayout.h */,
+				D8A192961EE2BE720061B21B /* XCLayout.m */,
+				D895EA8D1EE2C85300F5A345 /* XCCategoryModel.h */,
+				D895EA8E1EE2C85300F5A345 /* XCCategoryModel.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D8A1929B1EE2BE7A0061B21B /* WindowController */ = {
+			isa = PBXGroup;
+			children = (
+				D8A1929C1EE2BE7A0061B21B /* XCWindowController.h */,
+				D8A1929D1EE2BE7A0061B21B /* XCWindowController.m */,
+			);
+			path = WindowController;
+			sourceTree = "<group>";
+		};
+		D8DF99AB1EDBB69A001A71C7 = {
+			isa = PBXGroup;
+			children = (
+				D8DF99B61EDBB69A001A71C7 /* XCWallpaper */,
+				D8DF99B51EDBB69A001A71C7 /* Products */,
+				B56B89342B7CF65367A207BC /* Pods */,
+				01A909DE72EC58EA4DF6C810 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D8DF99B51EDBB69A001A71C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8DF99B41EDBB69A001A71C7 /* XCWallpaper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8DF99B61EDBB69A001A71C7 /* XCWallpaper */ = {
+			isa = PBXGroup;
+			children = (
+				D8DF99D81EDBD476001A71C7 /* XCWallpaper.entitlements */,
+				D8DF99B71EDBB69A001A71C7 /* AppDelegate.h */,
+				D8DF99B81EDBB69A001A71C7 /* AppDelegate.m */,
+				D8A192801EE2BDB40061B21B /* Class */,
+				D8DF99BA1EDBB69A001A71C7 /* Supporting Files */,
+			);
+			path = XCWallpaper;
+			sourceTree = "<group>";
+		};
+		D8DF99BA1EDBB69A001A71C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8DDBAC01EDD24F0008C7626 /* Assets.xcassets */,
+				D8DF99C51EDBB69A001A71C7 /* Info.plist */,
+				D8DF99BB1EDBB69A001A71C7 /* main.m */,
+				D8DF99C21EDBB69A001A71C7 /* Main.storyboard */,
+				D8A1927B1EE294700061B21B /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8DF99B31EDBB69A001A71C7 /* XCWallpaper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8DF99C81EDBB69A001A71C7 /* Build configuration list for PBXNativeTarget "XCWallpaper" */;
+			buildPhases = (
+				0F5DE05435298F04F6DBCC0A /* [CP] Check Pods Manifest.lock */,
+				D8DF99B01EDBB69A001A71C7 /* Sources */,
+				D8DF99B11EDBB69A001A71C7 /* Frameworks */,
+				D8DF99B21EDBB69A001A71C7 /* Resources */,
+				3CFC7763CEB5853026254672 /* [CP] Embed Pods Frameworks */,
+				5BC2738C9D85294DCD748DE4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XCWallpaper;
+			productName = XCWallpaper;
+			productReference = D8DF99B41EDBB69A001A71C7 /* XCWallpaper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8DF99AC1EDBB69A001A71C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = XC;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Alexcai;
+				TargetAttributes = {
+					D8DF99B31EDBB69A001A71C7 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = A95J37CEL7;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = D8DF99AF1EDBB69A001A71C7 /* Build configuration list for PBXProject "XCWallpaper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8DF99AB1EDBB69A001A71C7;
+			productRefGroup = D8DF99B51EDBB69A001A71C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8DF99B31EDBB69A001A71C7 /* XCWallpaper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8DF99B21EDBB69A001A71C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8DDBAC11EDD24F0008C7626 /* Assets.xcassets in Resources */,
+				D8DF99C41EDBB69A001A71C7 /* Main.storyboard in Resources */,
+				D8A192991EE2BE720061B21B /* XCHomeItem.xib in Resources */,
+				D8A1928D1EE2BDFC0061B21B /* XCTitleController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F5DE05435298F04F6DBCC0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3CFC7763CEB5853026254672 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XCWallpaper/Pods-XCWallpaper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BC2738C9D85294DCD748DE4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XCWallpaper/Pods-XCWallpaper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8DF99B01EDBB69A001A71C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8DF99BC1EDBB69A001A71C7 /* main.m in Sources */,
+				D8A1928E1EE2BDFC0061B21B /* XCNotificationName.m in Sources */,
+				D8A1929E1EE2BE7A0061B21B /* XCWindowController.m in Sources */,
+				D8A1928B1EE2BDFC0061B21B /* NSView+XCFrame.m in Sources */,
+				D8A192971EE2BE720061B21B /* XCHomeController.m in Sources */,
+				D8DF99B91EDBB69A001A71C7 /* AppDelegate.m in Sources */,
+				D895EA8F1EE2C85300F5A345 /* XCCategoryModel.m in Sources */,
+				D8A1928C1EE2BDFC0061B21B /* XCTitleController.m in Sources */,
+				D8A1929A1EE2BE720061B21B /* XCLayout.m in Sources */,
+				D8A192981EE2BE720061B21B /* XCHomeItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D8DF99C21EDBB69A001A71C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8DF99C31EDBB69A001A71C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8DF99C61EDBB69A001A71C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D8DF99C71EDBB69A001A71C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D8DF99C91EDBB69A001A71C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B063E5AC4F5E24E4F2CB9BC /* Pods-XCWallpaper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = XCWallpaper/XCWallpaper.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A95J37CEL7;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XCWallpaper/PrefixHeader.pch";
+				INFOPLIST_FILE = XCWallpaper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xiuce.XCWallpaper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D8DF99CA1EDBB69A001A71C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA67C8336F63A790EF3EDAF9 /* Pods-XCWallpaper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = XCWallpaper/XCWallpaper.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A95J37CEL7;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XCWallpaper/PrefixHeader.pch";
+				INFOPLIST_FILE = XCWallpaper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xiuce.XCWallpaper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8DF99AF1EDBB69A001A71C7 /* Build configuration list for PBXProject "XCWallpaper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8DF99C61EDBB69A001A71C7 /* Debug */,
+				D8DF99C71EDBB69A001A71C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8DF99C81EDBB69A001A71C7 /* Build configuration list for PBXNativeTarget "XCWallpaper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8DF99C91EDBB69A001A71C7 /* Debug */,
+				D8DF99CA1EDBB69A001A71C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8DF99AC1EDBB69A001A71C7 /* Project object */;
+}

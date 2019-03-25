@@ -47,3 +47,6 @@
    
 36. macOS10.14 Dark Mode 下适配UI界面
     * [Dark Mode下适配你的UI界面](https://www.jianshu.com/p/27f5df87cc16)
+
+38 NSResponderChain(响应链)  
+    * [Mac开发跬步积累(六): 响应链NSResponder Chain]()

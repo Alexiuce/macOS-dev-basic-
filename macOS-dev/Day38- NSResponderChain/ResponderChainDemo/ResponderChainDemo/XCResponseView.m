@@ -13,8 +13,8 @@
 //- (void)mouseDown:(NSEvent *)event{
 //    NSLog(@"%s",__FUNCTION__);
 //}
-- (BOOL)acceptsFirstResponder{
-    return YES;
-}
+//- (BOOL)acceptsFirstResponder{
+//    return YES;
+//}
 
 @end

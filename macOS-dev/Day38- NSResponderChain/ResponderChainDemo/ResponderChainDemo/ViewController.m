@@ -42,6 +42,7 @@
 #pragma mark - mouse event
 - (void)mouseDown:(NSEvent *)event{
     NSLog(@"%s",__FUNCTION__);
+     NSLog(@"first responder = %@",NSApp.keyWindow.firstResponder);
     [self showResponderInfo];
 }
 #pragma mark - keyboard event

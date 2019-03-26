@@ -28,6 +28,7 @@
 //    [NSApp.keyWindow setNextResponder:self];
     /** 设置响应者时,如果没有下面这行代码,会有什么问题呢?? (供思考)*/
 //    [self setNextResponder:responder];
+    
 }
 - (void)showResponderInfo{
     NSResponder *responder = self.view.nextResponder;

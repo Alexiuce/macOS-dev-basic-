@@ -27,12 +27,16 @@ class ViewController: NSViewController {
         
         // NSCollectionViewItem : 不是view ,它继承自NSViewController ,所以不能使用NIB方式
         
-          collectionView.register(NumberItem.self, forItemWithIdentifier: "demo")
+        collectionView.register(NumberItem.self, forItemWithIdentifier: NSUserInterfaceItemIdentifier(rawValue: "demo"))
         
        // HeaderView或者FooterView都需要注册(也就是告知CollectionView使用)
         let headerNib = NSNib(nibNamed: "HeaderView", bundle: nil)
 
-        collectionView.register(headerNib!, forSupplementaryViewOfKind: NSCollectionElementKindSectionHeader, withIdentifier: HeaderID)
+        collectionView.register(headerNib!, forSupplementaryViewOfKind: NSCollectionView.elementKindSectionHeader, withIdentifier: NSUserInterfaceItemIdentifier(rawValue: HeaderID))
+        
+//        collectionView.register(headerNib!, forSupplementaryViewOfKind: NSCollectionView.SupplementaryElementKind
+//            , withIdentifier: NSUserInterfaceItemIdentifier(rawValue: HeaderID))
+//        collectionView.register(headerNib!, forSupplementaryViewOfKind: NSCollectionElementKindSectionHeader, withIdentifier: HeaderID)
         
         (collectionView.collectionViewLayout as! NSCollectionViewFlowLayout).sectionHeadersPinToVisibleBounds = true
 
@@ -67,7 +71,7 @@ extension ViewController : NSCollectionViewDataSource{
     // 返回每个item
     func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
         // 获取重用的item,如果没有,则根据注册的item,系统会自动创建一个
-         let item = collectionView.makeItem(withIdentifier: "demo", for: indexPath) as! NumberItem
+        let item = collectionView.makeItem(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "demo"), for: indexPath) as! NumberItem
         
         let picIndex = indexPath.item > 10 ? indexPath.item - 10 : indexPath.item
         
@@ -81,7 +85,7 @@ extension ViewController : NSCollectionViewDataSource{
     // 返回每组Header或者Footer的视图
     func collectionView(_ collectionView: NSCollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> NSView {
         
-        let headerView = collectionView.makeSupplementaryView(ofKind:NSCollectionElementKindSectionHeader, withIdentifier: HeaderID, for: indexPath) as! HeaderView
+        let headerView = collectionView.makeSupplementaryView(ofKind:NSCollectionView.elementKindSectionHeader, withIdentifier: NSUserInterfaceItemIdentifier(rawValue: HeaderID), for: indexPath) as! HeaderView
         
         
         headerView.nameLabel.stringValue = "第\(indexPath.section)组"
